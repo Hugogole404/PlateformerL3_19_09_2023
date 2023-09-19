@@ -121,15 +121,15 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: Tileset_Enviro_001
     originalName: 
-    pivot: {x: 0, y: 0}
+    pivot: {x: 175, y: -469}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 0
-      height: 0
+      width: 1
+      height: 1
     spriteID: 02d619c6a06a6404eb489aee2b214693
     spriteBone: []
     spriteOutline: []
@@ -138,7 +138,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: -496, y: -496}
+    uvTransform: {x: 4, y: 4}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -151,10 +151,10 @@ ScriptedImporter:
     - name: Tileset_Enviro_001
       frameIndex: 0
       cellRect:
-        x: 0
-        y: 0
-        width: 500
-        height: 500
+        x: 75
+        y: 469
+        width: 1
+        height: 1
       spriteId: 02d619c6a06a6404eb489aee2b214693
     linkedCells: []
     parentIndex: -1
