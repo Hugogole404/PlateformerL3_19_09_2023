@@ -13,26 +13,33 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float _walkSpeed;
     [SerializeField] float _acceleration;
 
+    [Header("GroundCheck")]
+    [SerializeField] private float _groundOffset;
+    [SerializeField] private float _groundRadius;
+    [SerializeField] private LayerMask _GroundLayer;
+
+
     [Header("Jump")]
     [SerializeField] private bool _isGrounded;
-    [SerializeField] private float _groundRadius;
-    [SerializeField] private Collider2D[] _collidersGround;
-    [SerializeField] private LayerMask _GroundLayer;
-    [SerializeField] private float _groundOffset;
-    [SerializeField] private float _timerNoJump;
-    [SerializeField] private float _jumpForce;
     [SerializeField] private float _timeMinBetweenJump;
+    [SerializeField] private float _jumpForce;
     [SerializeField] private float _velocityFallMin;
-    [SerializeField] private float _gravity;
-    [SerializeField] private float _gravityUpJump;
+    [SerializeField] [Tooltip("Gravity when the player goes up and press jump")] private float _gravityUpJump;
+    [SerializeField] private float _jumpInputTimer = 0.1f;
+    [SerializeField] private Collider2D[] _collidersGround;
+    [SerializeField] private float _timerNoJump;
+    [SerializeField] [Tooltip("Gravity otherwise")] private float _gravity;
     [SerializeField] private float _timeSinceJumpPressed;
-    [SerializeField] private float _jumpInputTimer;
 
     void HandleInputs()
     {
         _inputs.x = Input.GetAxisRaw("Horizontal");
         _inputs.y = Input.GetAxisRaw("Vertical");
         _inputJump = Input.GetKey(KeyCode.UpArrow);
+        if (Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            _timeSinceJumpPressed = 0;
+        }
     }
     void HandleMovements()
     {
@@ -62,19 +69,7 @@ public class PlayerController : MonoBehaviour
 
     void HandleJump()
     {
-        if (Input.GetKeyDown(KeyCode.UpArrow))
-        {
-            _timeSinceJumpPressed = 0;
-        }
-
         _timerNoJump -= Time.deltaTime;
-        if (_inputJump && _rb.velocity.y <= 0 && _isGrounded && _timerNoJump <= 0 && 
-            _timeSinceJumpPressed < _jumpInputTimer)
-        {
-            _rb.velocity = new Vector2(_rb.velocity.x, _jumpForce);
-            _timerNoJump = _timeMinBetweenJump;
-        }
-
         if (_isGrounded == false)
         {
             if (_rb.velocity.y < 0)
@@ -90,12 +85,20 @@ public class PlayerController : MonoBehaviour
         {
             _rb.gravityScale = _gravity;
         }
+        if (_inputJump && _rb.velocity.y <= 0 && _isGrounded && _timerNoJump <= 0 && 
+            _timeSinceJumpPressed < _jumpInputTimer)
+        {
+            _rb.velocity = new Vector2(_rb.velocity.x, _jumpForce);
+            _timerNoJump = _timeMinBetweenJump;
+        }
+
 
         // limiter vit chute : 
         if (_rb.velocity.y < _velocityFallMin)
         {
             _rb.velocity = new Vector2(_rb.velocity.x, _velocityFallMin);
         }
+        _timeSinceJumpPressed += Time.deltaTime;
     }
 
 
@@ -108,6 +111,5 @@ public class PlayerController : MonoBehaviour
         HandleMovements();
         HandleJump();
         HandleGrounded();
-        _timeSinceJumpPressed += Time.deltaTime;
     }
 }

@@ -1550,25 +1550,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _inputJump: 0
   _rb: {fileID: 1411014190}
-  _walkSpeed: 20
-  _acceleration: 20
-  _isGrounded: 0
+  _walkSpeed: 1.5
+  _acceleration: 10
+  _groundOffset: -0.05
   _groundRadius: 0.05
+  _GroundLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  _isGrounded: 0
+  _timeMinBetweenJump: 0.75
+  _jumpForce: 2.6
+  _velocityFallMin: -2
+  _gravityUpJump: 0.4
+  _jumpInputTimer: 0.1
   _collidersGround:
   - {fileID: 1785385876}
   - {fileID: 1781377280}
   - {fileID: 572499660}
   - {fileID: 436204952}
-  _GroundLayer:
-    serializedVersion: 2
-    m_Bits: 8
-  _groundOffset: -0.05
   _timerNoJump: 0
-  _jumpForce: 5
-  _timeMinBetweenJump: 0.75
-  _velocityFallMin: -5
   _gravity: 1.5
-  _gravityUpJump: 1
+  _timeSinceJumpPressed: 0
 --- !u!1 &1685016190
 GameObject:
   m_ObjectHideFlags: 0
