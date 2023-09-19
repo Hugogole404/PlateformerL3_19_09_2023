@@ -1302,7 +1302,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1565,8 +1565,10 @@ MonoBehaviour:
   _groundOffset: -0.05
   _timerNoJump: 0
   _jumpForce: 5
-  _timeMinBetweenJump: 1
+  _timeMinBetweenJump: 0.75
   _velocityFallMin: -5
+  _gravity: 1.5
+  _gravityUpJump: 1
 --- !u!1 &1685016190
 GameObject:
   m_ObjectHideFlags: 0

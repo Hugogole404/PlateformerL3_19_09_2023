@@ -23,6 +23,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float _jumpForce;
     [SerializeField] private float _timeMinBetweenJump;
     [SerializeField] private float _velocityFallMin;
+    [SerializeField] private float _gravity;
+    [SerializeField] private float _gravityUpJump;
+    [SerializeField] private float _timeSinceJumpPressed;
+    [SerializeField] private float _jumpInputTimer;
 
     void HandleInputs()
     {
@@ -58,14 +62,37 @@ public class PlayerController : MonoBehaviour
 
     void HandleJump()
     {
+        if (Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            _timeSinceJumpPressed = 0;
+        }
+
         _timerNoJump -= Time.deltaTime;
-        if(_inputJump && _rb.velocity.y <=0 && _isGrounded && _timerNoJump <= 0)
+        if (_inputJump && _rb.velocity.y <= 0 && _isGrounded && _timerNoJump <= 0 && 
+            _timeSinceJumpPressed < _jumpInputTimer)
         {
             _rb.velocity = new Vector2(_rb.velocity.x, _jumpForce);
             _timerNoJump = _timeMinBetweenJump;
         }
+
+        if (_isGrounded == false)
+        {
+            if (_rb.velocity.y < 0)
+            {
+                _rb.gravityScale = _gravity;
+            }
+            else
+            {
+                _rb.gravityScale = _inputJump ? _gravityUpJump : _gravity;
+            }
+        }
+        else
+        {
+            _rb.gravityScale = _gravity;
+        }
+
         // limiter vit chute : 
-        if(_rb.velocity.y < _velocityFallMin)
+        if (_rb.velocity.y < _velocityFallMin)
         {
             _rb.velocity = new Vector2(_rb.velocity.x, _velocityFallMin);
         }
@@ -81,5 +108,6 @@ public class PlayerController : MonoBehaviour
         HandleMovements();
         HandleJump();
         HandleGrounded();
+        _timeSinceJumpPressed += Time.deltaTime;
     }
 }
