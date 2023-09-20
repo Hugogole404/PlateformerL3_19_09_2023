@@ -1449,7 +1449,7 @@ TextureImporter:
       name: Tileset_Enviro_001_63
       rect:
         serializedVersion: 2
-        x: 256
+        x: 240
         y: 420
         width: 16
         height: 16
@@ -1470,7 +1470,7 @@ TextureImporter:
       name: Tileset_Enviro_001_64
       rect:
         serializedVersion: 2
-        x: 272
+        x: 256
         y: 420
         width: 16
         height: 16
@@ -1491,8 +1491,8 @@ TextureImporter:
       name: Tileset_Enviro_001_65
       rect:
         serializedVersion: 2
-        x: 16
-        y: 388
+        x: 272
+        y: 420
         width: 16
         height: 16
       alignment: 0
@@ -1512,8 +1512,8 @@ TextureImporter:
       name: Tileset_Enviro_001_66
       rect:
         serializedVersion: 2
-        x: 32
-        y: 388
+        x: 288
+        y: 420
         width: 16
         height: 16
       alignment: 0
@@ -1533,8 +1533,8 @@ TextureImporter:
       name: Tileset_Enviro_001_67
       rect:
         serializedVersion: 2
-        x: 48
-        y: 388
+        x: 256
+        y: 404
         width: 16
         height: 16
       alignment: 0
@@ -1554,8 +1554,8 @@ TextureImporter:
       name: Tileset_Enviro_001_68
       rect:
         serializedVersion: 2
-        x: 80
-        y: 388
+        x: 272
+        y: 404
         width: 16
         height: 16
       alignment: 0
@@ -1575,7 +1575,7 @@ TextureImporter:
       name: Tileset_Enviro_001_69
       rect:
         serializedVersion: 2
-        x: 96
+        x: 16
         y: 388
         width: 16
         height: 16
@@ -1596,7 +1596,7 @@ TextureImporter:
       name: Tileset_Enviro_001_70
       rect:
         serializedVersion: 2
-        x: 112
+        x: 32
         y: 388
         width: 16
         height: 16
@@ -1617,8 +1617,8 @@ TextureImporter:
       name: Tileset_Enviro_001_71
       rect:
         serializedVersion: 2
-        x: 16
-        y: 372
+        x: 48
+        y: 388
         width: 16
         height: 16
       alignment: 0
@@ -1639,7 +1639,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 80
-        y: 372
+        y: 388
         width: 16
         height: 16
       alignment: 0
@@ -1659,8 +1659,8 @@ TextureImporter:
       name: Tileset_Enviro_001_73
       rect:
         serializedVersion: 2
-        x: 112
-        y: 372
+        x: 96
+        y: 388
         width: 16
         height: 16
       alignment: 0
@@ -1672,6 +1672,153 @@ TextureImporter:
       bones: []
       spriteID: 91c06d51ff0fffb4b981816c2d7b6b8c
       internalID: 1088116231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Enviro_001_74
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 388
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f58cad104ea939408bbf88b4ee93349
+      internalID: 1211506919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Enviro_001_75
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 388
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4ff0f6e77f034f4a936d419f0ba6d7d
+      internalID: 1341863460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Enviro_001_76
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 372
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d6b51f84c7f3e54d8e83a62e91beaa3
+      internalID: -1386364873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Enviro_001_77
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 372
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16c027f000b506346bcfe1cfc26ce9d7
+      internalID: 748291103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Enviro_001_78
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 372
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddaa68b2ec5b8b444826d052bb2cfd57
+      internalID: 1037122808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Enviro_001_79
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 372
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 323765889cbda59469b3211e1e0d7c13
+      internalID: -11315775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Enviro_001_80
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 372
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2100964e22f96a34eb75462980ba21ae
+      internalID: 1215605398
       vertices: []
       indices: 
       edges: []
@@ -1759,7 +1906,14 @@ TextureImporter:
       Tileset_Enviro_001_71: 395172888
       Tileset_Enviro_001_72: 358478404
       Tileset_Enviro_001_73: 1088116231
+      Tileset_Enviro_001_74: 1211506919
+      Tileset_Enviro_001_75: 1341863460
+      Tileset_Enviro_001_76: -1386364873
+      Tileset_Enviro_001_77: 748291103
+      Tileset_Enviro_001_78: 1037122808
+      Tileset_Enviro_001_79: -11315775
       Tileset_Enviro_001_8: -26214691
+      Tileset_Enviro_001_80: 1215605398
       Tileset_Enviro_001_9: -693005311
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0

@@ -31,6 +31,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] [Tooltip("Gravity otherwise")] private float _gravity;
     [SerializeField] private float _timeSinceJumpPressed;
     [SerializeField] private float _timeSinceGrounded;
+    [SerializeField] private float _coyoteTime;
 
     void HandleInputs()
     {
@@ -53,9 +54,14 @@ public class PlayerController : MonoBehaviour
     void HandleGrounded()
     {
         _timeSinceGrounded += Time.deltaTime;
+
         Vector2 pointGround = (transform.position + Vector3.up * _groundOffset);
         bool currentGrounded =
             Physics2D.OverlapCircleNonAlloc(pointGround, _groundRadius, _collidersGround, _GroundLayer) > 0;
+        if(currentGrounded == false && _isGrounded)
+        {
+            _timeSinceGrounded = 0;
+        }
         _isGrounded = currentGrounded;
     }
 
@@ -87,7 +93,7 @@ public class PlayerController : MonoBehaviour
         {
             _rb.gravityScale = _gravity;
         }
-        if (_inputJump && _rb.velocity.y <= 0 && _isGrounded && _timerNoJump <= 0 && 
+        if (_inputJump && _rb.velocity.y <= 0 && (_isGrounded || _timeSinceGrounded < _coyoteTime) && _timerNoJump <= 0 &&
             _timeSinceJumpPressed < _jumpInputTimer)
         {
             _rb.velocity = new Vector2(_rb.velocity.x, _jumpForce);
