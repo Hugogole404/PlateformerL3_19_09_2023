@@ -156,6 +156,7 @@ Transform:
   - {fileID: 1785385875}
   - {fileID: 1781377279}
   - {fileID: 572499659}
+  - {fileID: 704040373}
   - {fileID: 436204951}
   m_Father: {fileID: 1685016192}
   m_RootOrder: -1
@@ -1152,7 +1153,7 @@ GameObject:
   - component: {fileID: 436204951}
   - component: {fileID: 436204952}
   m_Layer: 3
-  m_Name: Colliders (3)
+  m_Name: PenteCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1173,8 +1174,8 @@ Transform:
   m_Father: {fileID: 106607075}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &436204952
-BoxCollider2D:
+--- !u!60 &436204952
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1205,7 +1206,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.6774776, y: 0.10961089}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1215,9 +1216,14 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.9601779, y: 0.48015386}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 1.2314115, y: 0.34055555}
+      - {x: -0.2579671, y: -0.2965952}
+      - {x: -0.24460497, y: -0.68789464}
+      - {x: 0.9780687, y: -0.2841531}
+      - {x: 1.4691912, y: -0.08799529}
+  m_UseDelaunayMesh: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1387,6 +1393,83 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9648709, y: 0.48015386}
   m_EdgeRadius: 0
+--- !u!1 &704040372
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 704040373}
+  - component: {fileID: 704040374}
+  m_Layer: 3
+  m_Name: Colliders (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &704040373
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704040372}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.3939152, y: 0.12728457, z: -0.04754554}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 106607075}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &704040374
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704040372}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 1.6762528, y: 0.11402786}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.9648714, y: 0.4801538}
+  m_EdgeRadius: 0
 --- !u!1 &1411014186
 GameObject:
   m_ObjectHideFlags: 0
@@ -1502,7 +1585,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1411014186}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.379, y: 0.08, z: 0}
+  m_LocalPosition: {x: -0.379, y: 0.576, z: 0}
   m_LocalScale: {x: 1.1785146, y: 1.1785146, z: 1.1785146}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1567,10 +1650,15 @@ MonoBehaviour:
   - {fileID: 1785385876}
   - {fileID: 1781377280}
   - {fileID: 572499660}
-  - {fileID: 436204952}
+  - {fileID: 704040374}
   _timerNoJump: 0
   _gravity: 1.5
   _timeSinceJumpPressed: 0
+  _timeSinceGrounded: 0
+  _coyoteTime: 0
+  _physicsFriction: {fileID: 0}
+  _physicsNoFriction: {fileID: 0}
+  _isOnSlope: 0
 --- !u!1 &1685016190
 GameObject:
   m_ObjectHideFlags: 0
