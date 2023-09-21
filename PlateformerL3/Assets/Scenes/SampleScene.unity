@@ -1658,6 +1658,7 @@ MonoBehaviour:
   _coyoteTime: 0
   _physicsFriction: {fileID: 6200000, guid: 5d202ab82ee2ef14eb9290e87e0236b8, type: 2}
   _physicsNoFriction: {fileID: 6200000, guid: 4b32e4c1f484e56479df1cc87ffeaddb, type: 2}
+  _collider: {fileID: 1411014187}
   _isOnSlope: 0
   direction: []
   _offsetCollisionBox: {fileID: 0}

@@ -37,7 +37,7 @@ public class PlayerController : MonoBehaviour
 
     [Header("Slope")]
     //[SerializeField] Collider2D[] _collider;
-    //[SerializeField] Collider2D _collider;
+    [SerializeField] Collider2D _collider;
     private RaycastHit2D[] _hitResults;
     private float _slopeDetectOffset;
     [SerializeField] private bool _isOnSlope;
@@ -133,16 +133,16 @@ public class PlayerController : MonoBehaviour
         bool slopeLeft =
             Physics2D.RaycastNonAlloc(origin, -Vector2.right, _hitResults, _slopeDetectOffset, _GroundLayer) > 0;
         _isOnSlope = (slopeRight || slopeLeft) && (slopeRight == false || slopeLeft == false);
-        //if (Mathf.Abs(_inputs.x) < 00.1f && (slopeLeft || slopeRight))
-        //{
-        //    _collidersGround.sharedMaterial = _physicsFriction;
-        //    //_collider.sharedMaterial = _physicsFriction;
-        //}
-        //else
-        //{
-        //    _collidersGround.sharedMaterial = _physicsNoFriction;
+        if (Mathf.Abs(_inputs.x) < 00.1f && (slopeLeft || slopeRight))
+        {
+           _collider.sharedMaterial = _physicsFriction;
+            //_collider.sharedMaterial = _physicsFriction;
+        }
+        else
+        {
+            _collider.sharedMaterial = _physicsNoFriction;
 
-        //}
+        }
     }
 
     //void HandleCorners()
@@ -186,5 +186,6 @@ public class PlayerController : MonoBehaviour
         HandleMovements();
         HandleJump();
         HandleGrounded();
+        HandleSlope();
     }
 }                    
