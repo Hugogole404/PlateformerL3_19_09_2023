@@ -4,18 +4,68 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
+using UnityEngine.UIElements;
+
 public class OptionsController : MonoBehaviour
 {
     [Header("Sound Settings")]
     [SerializeField] private TMP_Text soundTextValue = null;
-    [SerializeField] private Slider soundSlider = null;
+    [SerializeField] private UnityEngine.UI.Slider soundSlider = null;
 
     [Header("Music Settings")]
     [SerializeField] private TMP_Text musicTextValue = null;
-    [SerializeField] private Slider musicSlider = null;
+    [SerializeField] private UnityEngine.UI.Slider musicSlider = null;
 
     [Header("Confirmation Prompt")]
     [SerializeField] private GameObject confirmationPrompt = null;
+
+    [Header("Graphic Settings")]
+    [SerializeField] private UnityEngine.UI.Slider brightnessSlider = null;
+    [SerializeField] private TMP_Text brightnessTextValue = null;
+    [SerializeField] private float defaultBrightness = 1;
+
+    private bool _isFullScreen;
+    private float _brightnessLevel;
+
+    [Header("Resolution Dropdowns")]
+    public Dropdown resolutionDropdown;
+    private Resolution[] resolutions;
+
+    [Space(10)]
+    [SerializeField] private Toggle fullScreenToggle;
+
+    private void Start()
+    {
+        resolutions = Screen.resolutions;
+        resolutionDropdown.ClearOptions();
+
+        List<string> options = new List<string>();
+
+        int currentResolutionIndex = 0;
+
+        for (int i = 0; i < resolutions.Length; i++)
+        {
+            string option = resolutions[i].width + " x " + resolutions[i].height;
+            options.Add(option);
+
+            if (resolutions[i].width == Screen.width && resolutions[i].height == Screen.height)
+            {
+                currentResolutionIndex = i;
+            }
+        }
+    }
+
+//    fullScreenToggle.isOn = false;
+//    Screen.fullScreen = false;
+
+//    Resolution currentResolution = Screen.currentResolution;
+//    Screen.SetResolution(currentResolution.width, currentResolution.height, Screen.fullScreen);
+//    resolutionDropdown.value = resolutions.Length;
+    public void SetResolution(int  resolutionIndex)
+    {
+        Resolution resolution = resolutions[resolutionIndex];
+        Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
+    }
 
     public void SetSoundVolume(float soundVolume)
     {
@@ -44,6 +94,27 @@ public class OptionsController : MonoBehaviour
         confirmationPrompt.SetActive(true);
         yield return new WaitForSeconds(1);
         confirmationPrompt.SetActive(false);
+    }
+
+    public void SetBrigthness(float brightness)
+    {
+        _brightnessLevel = brightness;
+        brightnessTextValue.text = brightness.ToString("0.0");
+    }
+
+    public void setFullScreen(bool isFullscreen)
+    {
+        _isFullScreen = isFullscreen;
+    }
+
+    public void GraphicsApply()
+    {
+        PlayerPrefs.SetFloat("masterBrightness", _brightnessLevel);
+
+        PlayerPrefs.SetInt("masterFullscreen", (_isFullScreen ? 1 : 0));
+        Screen.fullScreen = _isFullScreen;
+
+        StartCoroutine(ConfirmationBox());
     }
 
 }
