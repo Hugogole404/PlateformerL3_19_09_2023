@@ -77,11 +77,14 @@ public class PlayerController : MonoBehaviour
 
         Vector2 pointGround = (transform.position + Vector3.up * _groundOffset);
         bool currentGrounded = Physics2D.OverlapCircleNonAlloc(pointGround, _groundRadius, _collidersGround, _GroundLayer) > 0;
+
         if (currentGrounded == false && _isGrounded)
         {
             _timeSinceGrounded = 0;
         }
+
         _isGrounded = currentGrounded;
+
         if (_isGrounded)
         {
             _currentJumpTank = _jumpTankMax;
@@ -100,6 +103,7 @@ public class PlayerController : MonoBehaviour
     void HandleJump()
     {
         _timerNoJump -= Time.deltaTime;
+
         if (_isGrounded == false)
         {
             if (_rb.velocity.y <= 0 || _isOnSlope)
@@ -115,10 +119,15 @@ public class PlayerController : MonoBehaviour
         {
             _rb.gravityScale = _gravity;
         }
+
         if ((_inputJump && _rb.velocity.y <= 0 && (_isGrounded || _timeSinceGrounded < _coyoteTime) && _timerNoJump <= 0 && _timeSinceJumpPressed < _jumpInputTimer))
         {
             _rb.velocity = new Vector2(_rb.velocity.x, _jumpForce);
             _timerNoJump = _timeMinBetweenJump;
+        }
+        else if ((_inputJump && _timeSinceJumpPressed < _jumpInputTimer) && !_isGrounded && _currentJumpTank > 0)
+        {
+            _rb.velocity = new Vector2(_rb.velocity.x, _jumpForce);
         }
 
 
@@ -127,6 +136,7 @@ public class PlayerController : MonoBehaviour
         {
             _rb.velocity = new Vector2(_rb.velocity.x, _velocityFallMin);
         }
+
         _timeSinceJumpPressed += Time.deltaTime;
     }
 
