@@ -34,6 +34,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float _coyoteTime;
     [SerializeField] PhysicsMaterial2D _physicsFriction;
     [SerializeField] PhysicsMaterial2D _physicsNoFriction;
+    [SerializeField] int JumpTank;
 
     [Header("Slope")]
     //[SerializeField] Collider2D[] _collider;
@@ -173,10 +174,6 @@ public class PlayerController : MonoBehaviour
     //    }
     //}
 
-    private void Awake()
-    {
-
-    }
     private void Update()
     {
         HandleInputs();
