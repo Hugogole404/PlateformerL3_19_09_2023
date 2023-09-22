@@ -62,6 +62,7 @@ public class PlayerController : MonoBehaviour
             _currentJumpTank--;
         }
     }
+
     void HandleMovements()
     {
         var velocity = _rb.velocity;
@@ -75,8 +76,7 @@ public class PlayerController : MonoBehaviour
         _timeSinceGrounded += Time.deltaTime;
 
         Vector2 pointGround = (transform.position + Vector3.up * _groundOffset);
-        bool currentGrounded =
-            Physics2D.OverlapCircleNonAlloc(pointGround, _groundRadius, _collidersGround, _GroundLayer) > 0;
+        bool currentGrounded = Physics2D.OverlapCircleNonAlloc(pointGround, _groundRadius, _collidersGround, _GroundLayer) > 0;
         if (currentGrounded == false && _isGrounded)
         {
             _timeSinceGrounded = 0;
@@ -87,7 +87,6 @@ public class PlayerController : MonoBehaviour
             _currentJumpTank = _jumpTankMax;
         }
     }
-
 
     private void OnDrawGizmos()
     {
@@ -116,8 +115,7 @@ public class PlayerController : MonoBehaviour
         {
             _rb.gravityScale = _gravity;
         }
-        if ((_inputJump && _rb.velocity.y <= 0 && (_isGrounded || _timeSinceGrounded < _coyoteTime) && _timerNoJump <= 0 &&
-            _timeSinceJumpPressed < _jumpInputTimer))
+        if ((_inputJump && _rb.velocity.y <= 0 && (_isGrounded || _timeSinceGrounded < _coyoteTime) && _timerNoJump <= 0 && _timeSinceJumpPressed < _jumpInputTimer))
         {
             _rb.velocity = new Vector2(_rb.velocity.x, _jumpForce);
             _timerNoJump = _timeMinBetweenJump;
