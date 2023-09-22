@@ -32,7 +32,7 @@ public class OptionsController : MonoBehaviour
     private Resolution[] resolutions;
 
     [Space(10)]
-    [SerializeField] private Toggle fullScreenToggle;
+    [SerializeField] private UnityEngine.UIElements.Toggle fullScreenToggle;
 
     private void Start()
     {
