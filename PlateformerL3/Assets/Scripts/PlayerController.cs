@@ -44,6 +44,9 @@ public class PlayerController : MonoBehaviour
     private float _slopeDetectOffset;
     [SerializeField] private bool _isOnSlope;
 
+    [Header("poseyyyyyy")]
+    public bool _isPaused;
+
     //[Header("Corner")]
     //[SerializeField] float[] direction;
     //[SerializeField] private BoxCollider2D _offsetCollisionBox;
@@ -187,8 +190,12 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        HandleInputs();
+        if (!_isPaused)
+        {
+            HandleInputs();
+        }
     }
+
     private void FixedUpdate()
     {
         HandleMovements();
