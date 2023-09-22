@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Experimental.GraphView;
+using UnityEditor.Rendering;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -99,36 +100,36 @@ public class PlayerController : MonoBehaviour
 
     void HandleJump()
     {
-            _timerNoJump -= Time.deltaTime;
-            if (_isGrounded == false)
-            {
-                if (_rb.velocity.y <= 0 || _isOnSlope)
-                {
-                    _rb.gravityScale = _gravity;
-                }
-                else
-                {
-                    _rb.gravityScale = _inputJump ? _gravityUpJump : _gravity;
-                }
-            }
-            else
+        _timerNoJump -= Time.deltaTime;
+        if (_isGrounded == false)
+        {
+            if (_rb.velocity.y <= 0 || _isOnSlope)
             {
                 _rb.gravityScale = _gravity;
             }
-            if ((_inputJump && _rb.velocity.y <= 0 && (_isGrounded || _timeSinceGrounded < _coyoteTime) && _timerNoJump <= 0 &&
-                _timeSinceJumpPressed < _jumpInputTimer) && _currentJumpTank > 0 )
+            else
             {
-                _rb.velocity = new Vector2(_rb.velocity.x, _jumpForce);
-                _timerNoJump = _timeMinBetweenJump;
+                _rb.gravityScale = _inputJump ? _gravityUpJump : _gravity;
             }
+        }
+        else
+        {
+            _rb.gravityScale = _gravity;
+        }
+        if ((_inputJump && _rb.velocity.y <= 0 && (_isGrounded || _timeSinceGrounded < _coyoteTime) && _timerNoJump <= 0 &&
+            _timeSinceJumpPressed < _jumpInputTimer))
+        {
+            _rb.velocity = new Vector2(_rb.velocity.x, _jumpForce);
+            _timerNoJump = _timeMinBetweenJump;
+        }
 
 
-            // limiter vit chute : 
-            if (_rb.velocity.y < _velocityFallMin)
-            {
-                _rb.velocity = new Vector2(_rb.velocity.x, _velocityFallMin);
-            }
-            _timeSinceJumpPressed += Time.deltaTime;
+        // limiter vit chute : 
+        if (_rb.velocity.y < _velocityFallMin)
+        {
+            _rb.velocity = new Vector2(_rb.velocity.x, _velocityFallMin);
+        }
+        _timeSinceJumpPressed += Time.deltaTime;
     }
 
     void HandleSlope()
