@@ -6,6 +6,10 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    [Header("SpawnPoint")]
+    [SerializeField] GameObject _spawnPoint;
+    [SerializeField] GameObject _player;
+
     [Header("Inputs")]
     private Vector2 _inputs;
     [SerializeField] bool _inputJump;
@@ -187,6 +191,11 @@ public class PlayerController : MonoBehaviour
     //        }
     //    }
     //}
+
+    private void Awake()
+    {
+        _player.transform.position = _spawnPoint.transform.position;
+    }
 
     private void Update()
     {
