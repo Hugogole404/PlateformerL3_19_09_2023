@@ -42,7 +42,7 @@ public class Initialisation : MonoBehaviour
             }
             else
             {
-                optionsController.ResetButton("Sound");
+                //optionsController.ResetButton("Sound");
             }
 
             if (PlayerPrefs.HasKey("musicVolume"))
@@ -55,7 +55,7 @@ public class Initialisation : MonoBehaviour
             }
             else
             {
-                optionsController.ResetButton("Music");
+                //optionsController.ResetButton("Music");
             }
 
             if (PlayerPrefs.HasKey("masterFullscreen"))
