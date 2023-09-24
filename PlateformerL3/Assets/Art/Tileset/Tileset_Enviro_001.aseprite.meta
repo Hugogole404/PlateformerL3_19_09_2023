@@ -121,15 +121,15 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: Tileset_Enviro_001
     originalName: 
-    pivot: {x: 175, y: -469}
+    pivot: {x: 0.67307687, y: -1.781065}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 1
-      height: 1
+      width: 260
+      height: 169
     spriteID: 02d619c6a06a6404eb489aee2b214693
     spriteBone: []
     spriteOutline: []
@@ -152,9 +152,9 @@ ScriptedImporter:
       frameIndex: 0
       cellRect:
         x: 75
-        y: 469
-        width: 1
-        height: 1
+        y: 301
+        width: 260
+        height: 169
       spriteId: 02d619c6a06a6404eb489aee2b214693
     linkedCells: []
     parentIndex: -1
