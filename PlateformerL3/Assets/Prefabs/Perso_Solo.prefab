@@ -250,6 +250,7 @@ MonoBehaviour:
   _inputJump: 0
   _rb: {fileID: 1433403160220054140}
   _walkSpeed: 8
+  _walkSpeedMemory: 0
   _acceleration: 19.5
   _groundOffset: -1.64
   _groundRadius: 1.06
@@ -262,10 +263,7 @@ MonoBehaviour:
   _velocityFallMin: -18
   _gravityUpJump: 6
   _jumpInputTimer: 0.1
-  _collidersGround:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  _collidersGround: []
   _timerNoJump: 0
   _gravity: 7.5
   _timeSinceJumpPressed: 0
