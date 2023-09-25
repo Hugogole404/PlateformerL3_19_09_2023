@@ -53,7 +53,7 @@ public class PlayerController : MonoBehaviour
     public bool _isPaused;
 
     [Header("Fly")]
-    [SerializeField] bool _isFlying;
+    [SerializeField] bool _isFlying = true;
     [SerializeField] List<GameObject> _windArea = new List<GameObject>();
 
     //[Header("Corner")]
@@ -73,10 +73,11 @@ public class PlayerController : MonoBehaviour
             _timeSinceJumpPressed = 0;
             _currentJumpTank--;
         }
-        else if (Input.GetKeyDown(KeyCode.LeftControl))
+        if (Input.GetKeyDown(KeyCode.LeftControl))
         {
             for (int i = 0; i < _windArea.Count; i++)
             {
+                _isFlying = !_isFlying;
                 _windArea[i].SetActive(!_isFlying);
             }
         }
