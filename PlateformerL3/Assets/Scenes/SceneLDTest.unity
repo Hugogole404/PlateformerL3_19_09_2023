@@ -3147,16 +3147,16 @@ MonoBehaviour:
   _rb: {fileID: 1763279763}
   _walkSpeed: 6
   _acceleration: 10
-  _groundOffset: 0
-  _groundRadius: 2.45
+  _groundOffset: -1.64
+  _groundRadius: 1.06
   _GroundLayer:
     serializedVersion: 2
     m_Bits: 8
   _isGrounded: 0
   _timeMinBetweenJump: 0.75
-  _jumpForce: 9
+  _jumpForce: 20
   _velocityFallMin: -9
-  _gravityUpJump: 1.2
+  _gravityUpJump: 6
   _jumpInputTimer: 0.1
   _collidersGround:
   - {fileID: 1062429171}
