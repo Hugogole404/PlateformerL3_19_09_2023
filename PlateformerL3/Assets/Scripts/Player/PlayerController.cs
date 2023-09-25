@@ -16,7 +16,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Rigidbody2D _rb;
 
     [Header("Movements")]
-    [SerializeField] float _walkSpeed;
+    public float _walkSpeed;
+    public float _walkSpeedMemory;
     [SerializeField] float _acceleration;
 
     [Header("GroundCheck")]
@@ -48,7 +49,7 @@ public class PlayerController : MonoBehaviour
     private float _slopeDetectOffset;
     [SerializeField] private bool _isOnSlope;
 
-    [Header("poseyyyyyy")]
+    [Header("Pause")]
     public bool _isPaused;
 
     //[Header("Corner")]
@@ -195,6 +196,7 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         _player.transform.position = _spawnPoint.transform.position;
+        _walkSpeedMemory = _walkSpeed;
     }
 
     private void Update()

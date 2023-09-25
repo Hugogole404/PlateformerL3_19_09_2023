@@ -1664,11 +1664,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!70 &1411014187 stripped
-CapsuleCollider2D:
-  m_CorrespondingSourceObject: {fileID: 7394283409283091782, guid: 631560b8fe5968b4ca0b05daa1491b2e, type: 3}
-  m_PrefabInstance: {fileID: 7760837499293981189}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1411014188 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7084585929433202663, guid: 631560b8fe5968b4ca0b05daa1491b2e, type: 3}
@@ -1984,7 +1979,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1707221799}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.5405, y: 0.4535, z: 0}
+  m_LocalPosition: {x: 0.5405, y: 0.12, z: 0}
   m_LocalScale: {x: 0.19341886, y: 0.19341886, z: 0.19341886}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2003,10 +1998,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e28026d316b0a4549b78eff5029295dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerDetection: {fileID: 1411014187}
   playerController: {fileID: 1411014188}
   Story: {fileID: 71124640}
   _isActive: 0
+  obj: {fileID: 1707221799}
 --- !u!1 &1781377278
 GameObject:
   m_ObjectHideFlags: 0
