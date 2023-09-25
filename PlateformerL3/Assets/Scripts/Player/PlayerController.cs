@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Experimental.GraphView;
@@ -53,7 +54,7 @@ public class PlayerController : MonoBehaviour
     public bool _isPaused;
 
     [Header("Fly")]
-    [SerializeField] bool _isFlying = true;
+    [SerializeField] bool _isFlying = false;
     [SerializeField] List<GameObject> _windArea = new List<GameObject>();
 
     //[Header("Corner")]
@@ -73,12 +74,19 @@ public class PlayerController : MonoBehaviour
             _timeSinceJumpPressed = 0;
             _currentJumpTank--;
         }
-        if (Input.GetKeyDown(KeyCode.LeftControl))
+        if (Input.GetKey(KeyCode.LeftControl))
         {
             for (int i = 0; i < _windArea.Count; i++)
             {
-                _isFlying = !_isFlying;
-                _windArea[i].SetActive(!_isFlying);
+                //_isFlying = !_isFlying;
+                _windArea[i].SetActive(true);
+            }
+        }
+        else
+        {
+            for (int i = 0; i < _windArea.Count; i++)
+            {
+                _windArea[i].SetActive(false);
             }
         }
     }
