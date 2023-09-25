@@ -112,8 +112,8 @@ Transform:
   m_GameObject: {fileID: 4059971287021786064}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 6.5, y: -2.77, z: 0}
-  m_LocalScale: {x: 1.1785146, y: 1.1785146, z: 1.1785146}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 47006401574810551}
   m_Father: {fileID: 0}
@@ -250,6 +250,7 @@ MonoBehaviour:
   _inputJump: 0
   _rb: {fileID: 1433403160220054140}
   _walkSpeed: 8
+  _walkSpeedMemory: 0
   _acceleration: 19.5
   _groundOffset: -1.64
   _groundRadius: 1.06
@@ -262,10 +263,7 @@ MonoBehaviour:
   _velocityFallMin: -18
   _gravityUpJump: 6
   _jumpInputTimer: 0.1
-  _collidersGround:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  _collidersGround: []
   _timerNoJump: 0
   _gravity: 7.5
   _timeSinceJumpPressed: 0
@@ -278,3 +276,5 @@ MonoBehaviour:
   _collider: {fileID: 5307801049736090130}
   _isOnSlope: 0
   _isPaused: 0
+  _isFlying: 1
+  _windArea: []
