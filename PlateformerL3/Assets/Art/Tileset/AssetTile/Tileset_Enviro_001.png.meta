@@ -2352,7 +2352,7 @@ TextureImporter:
       name: Tileset_Enviro_001_106
       rect:
         serializedVersion: 2
-        x: 176
+        x: 64
         y: 196
         width: 16
         height: 16
@@ -2373,7 +2373,7 @@ TextureImporter:
       name: Tileset_Enviro_001_107
       rect:
         serializedVersion: 2
-        x: 208
+        x: 176
         y: 196
         width: 16
         height: 16
@@ -2394,7 +2394,7 @@ TextureImporter:
       name: Tileset_Enviro_001_108
       rect:
         serializedVersion: 2
-        x: 240
+        x: 208
         y: 196
         width: 16
         height: 16
@@ -2415,7 +2415,7 @@ TextureImporter:
       name: Tileset_Enviro_001_109
       rect:
         serializedVersion: 2
-        x: 272
+        x: 240
         y: 196
         width: 16
         height: 16
@@ -2436,8 +2436,8 @@ TextureImporter:
       name: Tileset_Enviro_001_110
       rect:
         serializedVersion: 2
-        x: 176
-        y: 180
+        x: 272
+        y: 196
         width: 16
         height: 16
       alignment: 0
@@ -2449,6 +2449,90 @@ TextureImporter:
       bones: []
       spriteID: c3302c64772fc78438ec54defc133ff8
       internalID: 1837405891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Enviro_001_111
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 180
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bef3ababa66c08947998ed59c9812896
+      internalID: 1643732674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Enviro_001_112
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 180
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96c8e44e77665ae4f9c24f1e093f6044
+      internalID: 828186993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Enviro_001_113
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 180
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df9ae592547909848848cbdd8a8ab7af
+      internalID: -354460100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Enviro_001_114
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 180
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a879900302492054093640af8e5c093d
+      internalID: -1555240246
       vertices: []
       indices: 
       edges: []
@@ -2479,6 +2563,10 @@ TextureImporter:
       Tileset_Enviro_001_109: -1448999831
       Tileset_Enviro_001_11: -75278538
       Tileset_Enviro_001_110: 1837405891
+      Tileset_Enviro_001_111: 1643732674
+      Tileset_Enviro_001_112: 828186993
+      Tileset_Enviro_001_113: -354460100
+      Tileset_Enviro_001_114: -1555240246
       Tileset_Enviro_001_12: 922892954
       Tileset_Enviro_001_13: -1242837376
       Tileset_Enviro_001_14: 1571338539

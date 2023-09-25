@@ -107,6 +107,26 @@ public class OptionsController : MonoBehaviour
         _isFullScreen = isFullscreen;
     }
 
+    //public void ResetButton(string MenuType)
+    //{
+    //    if (MenuType == "Sound")
+    //    {
+    //        AudioListener.volume = defaultSound;
+    //        soundSlider.value = defaultSound;
+    //        soundTextValue = defaultSound.ToString("0.0");
+    //        SoundApply;
+    //    }
+
+    //    if (MenuType == "Music")
+    //    {
+    //        AudioListener.volume = defaultMusic;
+    //        soundSlider.value = defaultMusic;
+    //        soundTextValue = defaultMusic.ToString("0.0");
+    //        MusicApply;
+    //    }
+
+    //}
+
     public void GraphicsApply()
     {
         PlayerPrefs.SetFloat("masterBrightness", _brightnessLevel);

@@ -40,10 +40,10 @@ public class Initialisation : MonoBehaviour
                 soundSlider.value = localVolume;
                 AudioListener.volume = localVolume;
             }
-            else
-            {
-                //optionsController.ResetButton("Sound");
-            }
+            //else
+            //{
+            //    optionsController.ResetButton("Sound");
+            //}
 
             if (PlayerPrefs.HasKey("musicVolume"))
             {
@@ -53,10 +53,10 @@ public class Initialisation : MonoBehaviour
                 soundSlider.value = localVolume;
                 AudioListener.volume = localVolume;
             }
-            else
-            {
-                //optionsController.ResetButton("Music");
-            }
+            //else
+            //{
+            //    optionsController.ResetButton("Music");
+            //}
 
             if (PlayerPrefs.HasKey("masterFullscreen"))
             {

@@ -52,6 +52,10 @@ public class PlayerController : MonoBehaviour
     [Header("Pause")]
     public bool _isPaused;
 
+    [Header("Fly")]
+    [SerializeField] bool _isFlying = true;
+    [SerializeField] List<GameObject> _windArea = new List<GameObject>();
+
     //[Header("Corner")]
     //[SerializeField] float[] direction;
     //[SerializeField] private BoxCollider2D _offsetCollisionBox;
@@ -68,6 +72,14 @@ public class PlayerController : MonoBehaviour
         {
             _timeSinceJumpPressed = 0;
             _currentJumpTank--;
+        }
+        if (Input.GetKeyDown(KeyCode.LeftControl))
+        {
+            for (int i = 0; i < _windArea.Count; i++)
+            {
+                _isFlying = !_isFlying;
+                _windArea[i].SetActive(!_isFlying);
+            }
         }
     }
 
