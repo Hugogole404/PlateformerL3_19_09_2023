@@ -106,19 +106,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Chara_Idle_10
+      name: Chara_Idle_3
       rect:
         serializedVersion: 2
-        x: 8
-        y: 8
-        width: 40
-        height: 59
+        x: 192
+        y: 0
+        width: 64
+        height: 80
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -131,15 +144,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Chara_Idle_11
+      name: Chara_Idle_4
       rect:
         serializedVersion: 2
-        x: 71
-        y: 8
-        width: 42
-        height: 62
+        x: 256
+        y: 0
+        width: 64
+        height: 80
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -152,15 +165,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Chara_Idle_12
+      name: Chara_Idle_5
       rect:
         serializedVersion: 2
-        x: 135
-        y: 8
-        width: 42
-        height: 63
+        x: 320
+        y: 0
+        width: 64
+        height: 80
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -173,64 +186,64 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Chara_Idle_13
+      name: Chara_Idle_0
       rect:
         serializedVersion: 2
-        x: 199
-        y: 8
-        width: 43
-        height: 67
+        x: 0
+        y: 0
+        width: 64
+        height: 80
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9619c17bc69f28845a21afc406e03b71
-      internalID: 246171424
+      spriteID: c96850c92142d9549b1eb13c284953e9
+      internalID: -1950310376
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Chara_Idle_14
+      name: Chara_Idle_1
       rect:
         serializedVersion: 2
-        x: 261
-        y: 8
-        width: 44
-        height: 67
+        x: 64
+        y: 0
+        width: 64
+        height: 80
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1ad8e6ef0f960b4ea9cce667375b1e4
-      internalID: 820715175
+      spriteID: 3b8205786aeaf6142996ed8a61fbbe5c
+      internalID: 818999517
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Chara_Idle_16
+      name: Chara_Idle_2
       rect:
         serializedVersion: 2
-        x: 325
-        y: 8
-        width: 44
-        height: 67
+        x: 128
+        y: 0
+        width: 64
+        height: 80
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8dd2703035159d34fa053de4692f85b8
-      internalID: -378498282
+      spriteID: 46107fdb44a022c4598fad9373e6a09c
+      internalID: 1858035605
       vertices: []
       indices: 
       edges: []
@@ -248,21 +261,10 @@ TextureImporter:
     nameFileIdTable:
       Chara_Idle_0: -1950310376
       Chara_Idle_1: 818999517
-      Chara_Idle_10: -390942889
-      Chara_Idle_11: 406561400
-      Chara_Idle_12: -1852667397
-      Chara_Idle_13: 1823704877
-      Chara_Idle_14: -850472702
-      Chara_Idle_15: 2129915363
-      Chara_Idle_16: 943078658
       Chara_Idle_2: 1858035605
       Chara_Idle_3: 1138310240
       Chara_Idle_4: -282173257
       Chara_Idle_5: -1071671649
-      Chara_Idle_6: 246171424
-      Chara_Idle_7: 820715175
-      Chara_Idle_8: -2016704488
-      Chara_Idle_9: -378498282
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
