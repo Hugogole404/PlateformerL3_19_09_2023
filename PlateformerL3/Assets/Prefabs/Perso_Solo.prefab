@@ -117,7 +117,7 @@ Transform:
   m_Children:
   - {fileID: 47006401574810551}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4113393310962521920
 SpriteRenderer:
@@ -250,7 +250,7 @@ MonoBehaviour:
   _inputJump: 0
   _rb: {fileID: 1433403160220054140}
   _walkSpeed: 8
-  _acceleration: 18.5
+  _acceleration: 19.5
   _groundOffset: -1.64
   _groundRadius: 1.06
   _GroundLayer:
@@ -258,7 +258,7 @@ MonoBehaviour:
     m_Bits: 8
   _isGrounded: 0
   _timeMinBetweenJump: 0.75
-  _jumpForce: 22
+  _jumpForce: 23
   _velocityFallMin: -18
   _gravityUpJump: 6
   _jumpInputTimer: 0.1
