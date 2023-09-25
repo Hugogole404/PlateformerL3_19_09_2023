@@ -28,7 +28,7 @@ public class OptionsController : MonoBehaviour
     private float _brightnessLevel;
 
     [Header("Resolution Dropdowns")]
-    public Dropdown resolutionDropdown;
+    public TMP_Dropdown resolutionDropdown;
     private Resolution[] resolutions;
 
     [Space(10)]
@@ -61,7 +61,7 @@ public class OptionsController : MonoBehaviour
 //    Resolution currentResolution = Screen.currentResolution;
 //    Screen.SetResolution(currentResolution.width, currentResolution.height, Screen.fullScreen);
 //    resolutionDropdown.value = resolutions.Length;
-    public void SetResolution(int  resolutionIndex)
+    public void SetResolution(int resolutionIndex)
     {
         Resolution resolution = resolutions[resolutionIndex];
         Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
