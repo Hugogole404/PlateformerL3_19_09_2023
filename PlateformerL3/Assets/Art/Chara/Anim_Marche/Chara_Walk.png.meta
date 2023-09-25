@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1d723b7ec49f4c24ca78674b9d1cc5b5
+guid: 1696483ef51dc2d43a2e1793a6178d64
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -71,8 +71,8 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: 4
-    textureCompression: 2
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -106,131 +106,165 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Chara_Idle_10
+      name: Chara_Walk_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 8
-        width: 40
-        height: 59
+        x: 0
+        y: 0
+        width: 64
+        height: 80
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 01d8a77086a9c264d89ada5e13766df6
-      internalID: 1138310240
+      spriteID: a597c097ea5e78a46bec57955c88523f
+      internalID: -1627682633
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Chara_Idle_11
+      name: Chara_Walk_1
       rect:
         serializedVersion: 2
-        x: 71
-        y: 8
-        width: 42
-        height: 62
+        x: 64
+        y: 0
+        width: 64
+        height: 80
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bed72579f257d9b4999312e723255260
-      internalID: -282173257
+      spriteID: 6ef9cc7aed18e93468a5fe60e30b85f0
+      internalID: -1247698816
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Chara_Idle_12
+      name: Chara_Walk_2
       rect:
         serializedVersion: 2
-        x: 135
-        y: 8
-        width: 42
-        height: 63
+        x: 128
+        y: 0
+        width: 64
+        height: 80
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f5fc7a2d87b22f4abfc72bd1eb5b6c6
-      internalID: -1071671649
+      spriteID: a87f851bf262fc5489194482cb4b2e49
+      internalID: -1883959775
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Chara_Idle_13
+      name: Chara_Walk_3
       rect:
         serializedVersion: 2
-        x: 199
-        y: 8
-        width: 43
-        height: 67
+        x: 192
+        y: 0
+        width: 64
+        height: 80
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9619c17bc69f28845a21afc406e03b71
-      internalID: 246171424
+      spriteID: 2005cca55dab27a43be684c988e809d4
+      internalID: -1328257416
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Chara_Idle_14
+      name: Chara_Walk_4
       rect:
         serializedVersion: 2
-        x: 261
-        y: 8
-        width: 44
-        height: 67
+        x: 256
+        y: 0
+        width: 64
+        height: 80
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1ad8e6ef0f960b4ea9cce667375b1e4
-      internalID: 820715175
+      spriteID: 2d48d5ddb0a0a17449bb2fa222fd9d7f
+      internalID: -527919033
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Chara_Idle_16
+      name: Chara_Walk_5
       rect:
         serializedVersion: 2
-        x: 325
-        y: 8
-        width: 44
-        height: 67
+        x: 320
+        y: 0
+        width: 64
+        height: 80
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8dd2703035159d34fa053de4692f85b8
-      internalID: -378498282
+      spriteID: 1ab08232a87d6394ebf8ca7ca97c3cb7
+      internalID: -210078181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chara_Walk_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 64
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18018149493be8a499f1f7a2564a5095
+      internalID: -1415260087
       vertices: []
       indices: 
       edges: []
@@ -246,23 +280,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Chara_Idle_0: -1950310376
-      Chara_Idle_1: 818999517
-      Chara_Idle_10: -390942889
-      Chara_Idle_11: 406561400
-      Chara_Idle_12: -1852667397
-      Chara_Idle_13: 1823704877
-      Chara_Idle_14: -850472702
-      Chara_Idle_15: 2129915363
-      Chara_Idle_16: 943078658
-      Chara_Idle_2: 1858035605
-      Chara_Idle_3: 1138310240
-      Chara_Idle_4: -282173257
-      Chara_Idle_5: -1071671649
-      Chara_Idle_6: 246171424
-      Chara_Idle_7: 820715175
-      Chara_Idle_8: -2016704488
-      Chara_Idle_9: -378498282
+      Chara_Walk_0: -1627682633
+      Chara_Walk_1: -1247698816
+      Chara_Walk_2: -1883959775
+      Chara_Walk_3: -1328257416
+      Chara_Walk_4: -527919033
+      Chara_Walk_5: -210078181
+      Chara_Walk_6: -1415260087
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
