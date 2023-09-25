@@ -3145,26 +3145,25 @@ MonoBehaviour:
   _player: {fileID: 1763279760}
   _inputJump: 0
   _rb: {fileID: 1763279763}
-  _walkSpeed: 5
+  _walkSpeed: 6
   _acceleration: 10
-  _groundOffset: -0.05
-  _groundRadius: 0.05
+  _groundOffset: 0
+  _groundRadius: 2.45
   _GroundLayer:
     serializedVersion: 2
     m_Bits: 8
   _isGrounded: 0
   _timeMinBetweenJump: 0.75
-  _jumpForce: 2.6
-  _velocityFallMin: -2
-  _gravityUpJump: 0.8
+  _jumpForce: 9
+  _velocityFallMin: -9
+  _gravityUpJump: 1.2
   _jumpInputTimer: 0.1
   _collidersGround:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1062429171}
+  - {fileID: 426254685}
+  - {fileID: 24284552}
   _timerNoJump: 0
-  _gravity: 5
+  _gravity: 7.5
   _timeSinceJumpPressed: 0
   _timeSinceGrounded: 0
   _coyoteTime: 0
@@ -3187,7 +3186,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 5
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
