@@ -155,10 +155,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e28026d316b0a4549b78eff5029295dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerController: {fileID: 0}
+  playerController: {fileID: 1405943452}
   Story: {fileID: 920412200}
   _isActive: 0
-  obj: {fileID: 0}
+  obj: {fileID: 146390236}
 --- !u!61 &146390238
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2423,6 +2423,17 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1648970079}
   m_SourcePrefab: {fileID: 100100000, guid: dadf9fd71fdd04d41b7dc4810e3a26a0, type: 3}
+--- !u!114 &1405943452 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7463726113090366246, guid: dadf9fd71fdd04d41b7dc4810e3a26a0, type: 3}
+  m_PrefabInstance: {fileID: 1405943451}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1648970073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88e09261ea3225144bbf22f23444c1bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1609469652
 GameObject:
   m_ObjectHideFlags: 0
