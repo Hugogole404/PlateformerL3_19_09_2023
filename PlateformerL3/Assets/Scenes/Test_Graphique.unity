@@ -458,8 +458,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "    Maman semble tr\xE8s \n    fatigu\xE9 c'est temps\n    -ci et sa maladie
     ne \n    l'aide pas non plus... \n    Papa et moi somme \n    tout les jours
-    \n    inquiets pour elle, le \n    docteur parlait d'une \n    maladie grave
-    mais \n    j'esp\xE8re qu'elle se \n    remettra vite..."
+    \n    inquiets pour elle, le \n    docteur parlait d'une \n    _____ grave mais
+    \n    j'esp\xE8re qu'elle se \n    remettra vite..."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5d798427b51cf4147bd01c0749f1113b, type: 2}
   m_sharedMaterial: {fileID: 6052070512381064516, guid: 5d798427b51cf4147bd01c0749f1113b, type: 2}
@@ -468,8 +468,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4279769167
-  m_fontColor: {r: 0.31132078, g: 0.09222143, b: 0.09222143, a: 1}
+    rgba: 4279242841
+  m_fontColor: {r: 0.3490566, g: 0.06388392, b: 0.06388392, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -603,8 +603,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4281343601
+  m_fontColor: {r: 0.4433962, g: 0.118796706, b: 0.18687037, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -804,7 +804,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &920412201
 RectTransform:
   m_ObjectHideFlags: 0
@@ -852,7 +852,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.966195, b: 0.91886795, a: 1}
+  m_Color: {r: 0.6291029, g: 0.6701206, b: 0.9339623, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
