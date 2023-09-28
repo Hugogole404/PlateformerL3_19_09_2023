@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class DeathZone : MonoBehaviour
 {
-    [Header("DeathZone")]
-    [SerializeField] PlayerController PlayerController;
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        collision.transform.position = PlayerController._spawnPoint.transform.position;
+        if (collision.gameObject.GetComponent<PlayerController>())
+        {
+            collision.transform.position = collision.gameObject.GetComponent<PlayerController>()._spawnPoint.transform.position;
+        }
     }
 }
