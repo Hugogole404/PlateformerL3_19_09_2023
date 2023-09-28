@@ -81,7 +81,7 @@ SpriteRenderer:
   m_Size: {x: 8, y: 9.5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1155433349197886976
@@ -165,7 +165,7 @@ SpriteRenderer:
   m_Size: {x: 4.25, y: 11.125}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &3299333631305456203
@@ -249,7 +249,7 @@ SpriteRenderer:
   m_Size: {x: 3.0625, y: 5.625}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &3574009144349508695
@@ -333,7 +333,7 @@ SpriteRenderer:
   m_Size: {x: 2.8125, y: 4.75}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &4717536768082436314
@@ -417,7 +417,7 @@ SpriteRenderer:
   m_Size: {x: 4.25, y: 7.25}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &6004560593521466975
@@ -501,7 +501,7 @@ SpriteRenderer:
   m_Size: {x: 3.625, y: 7.4375}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &6494290007079429039
@@ -585,7 +585,7 @@ SpriteRenderer:
   m_Size: {x: 4.25, y: 11.125}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &7684822296475277720
@@ -626,9 +626,8 @@ Transform:
   - {fileID: 1012962543999020727}
   - {fileID: 5303408971702517901}
   - {fileID: 5263582661758640942}
-  - {fileID: 126702997622219351}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8905229218751183211
 GameObject:
@@ -711,7 +710,7 @@ SpriteRenderer:
   m_Size: {x: 4.25, y: 7.25}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &8983732709524866433
@@ -795,7 +794,7 @@ SpriteRenderer:
   m_Size: {x: 4.25, y: 7.25}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &9031947810690867941
@@ -879,80 +878,6 @@ SpriteRenderer:
   m_Size: {x: 2.8125, y: 4.75}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1001 &4948608094482724447
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1137401619228594762}
-    m_Modifications:
-    - target: {fileID: 1324989194271224738, guid: baec0a76e434ad542927a35d030c00dd, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 5898f98ff784ad6478c0c9eb8acee524, type: 3}
-    - target: {fileID: 5003181855193437192, guid: baec0a76e434ad542927a35d030c00dd, type: 3}
-      propertyPath: m_RootOrder
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5003181855193437192, guid: baec0a76e434ad542927a35d030c00dd, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.0360088
-      objectReference: {fileID: 0}
-    - target: {fileID: 5003181855193437192, guid: baec0a76e434ad542927a35d030c00dd, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.6751343
-      objectReference: {fileID: 0}
-    - target: {fileID: 5003181855193437192, guid: baec0a76e434ad542927a35d030c00dd, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.73260164
-      objectReference: {fileID: 0}
-    - target: {fileID: 5003181855193437192, guid: baec0a76e434ad542927a35d030c00dd, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5003181855193437192, guid: baec0a76e434ad542927a35d030c00dd, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5003181855193437192, guid: baec0a76e434ad542927a35d030c00dd, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5003181855193437192, guid: baec0a76e434ad542927a35d030c00dd, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5003181855193437192, guid: baec0a76e434ad542927a35d030c00dd, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5003181855193437192, guid: baec0a76e434ad542927a35d030c00dd, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5003181855193437192, guid: baec0a76e434ad542927a35d030c00dd, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6279479537407848224, guid: baec0a76e434ad542927a35d030c00dd, type: 3}
-      propertyPath: m_Name
-      value: Sprite_Tree
-      objectReference: {fileID: 0}
-    - target: {fileID: 6279479537407848224, guid: baec0a76e434ad542927a35d030c00dd, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: baec0a76e434ad542927a35d030c00dd, type: 3}
---- !u!4 &126702997622219351 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5003181855193437192, guid: baec0a76e434ad542927a35d030c00dd, type: 3}
-  m_PrefabInstance: {fileID: 4948608094482724447}
-  m_PrefabAsset: {fileID: 0}
