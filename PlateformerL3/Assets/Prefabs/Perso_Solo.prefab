@@ -251,7 +251,7 @@ MonoBehaviour:
   _rb: {fileID: 1433403160220054140}
   _walkSpeed: 9
   _walkSpeedMemory: 0
-  _acceleration: 19.5
+  _acceleration: 33
   _groundOffset: -1.64
   _groundRadius: 1.06
   _GroundLayer:

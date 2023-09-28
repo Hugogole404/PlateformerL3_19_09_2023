@@ -46,10 +46,10 @@ MonoBehaviour:
     m_Value: 1
   threshold:
     m_OverrideState: 1
-    m_Value: 0.78
+    m_Value: 0.5
   intensity:
     m_OverrideState: 1
-    m_Value: 0.8
+    m_Value: 1.1
   scatter:
     m_OverrideState: 1
     m_Value: 1
@@ -58,7 +58,7 @@ MonoBehaviour:
     m_Value: 65472
   tint:
     m_OverrideState: 1
-    m_Value: {r: 0.17007832, g: 0.3409612, b: 0.735849, a: 1}
+    m_Value: {r: 0.11747954, g: 0.2192411, b: 0.4528302, a: 1}
   highQualityFiltering:
     m_OverrideState: 0
     m_Value: 0
@@ -131,3 +131,44 @@ MonoBehaviour:
   - {fileID: -4687700625100991954}
   - {fileID: -5408667008729532996}
   - {fileID: -2149158305327976966}
+  - {fileID: 5187913289066094819}
+--- !u!114 &5187913289066094819
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdfbdbb87d3286943a057f7791b43141, type: 3}
+  m_Name: ChannelMixer
+  m_EditorClassIdentifier: 
+  active: 1
+  redOutRedIn:
+    m_OverrideState: 0
+    m_Value: 100
+  redOutGreenIn:
+    m_OverrideState: 0
+    m_Value: 0
+  redOutBlueIn:
+    m_OverrideState: 0
+    m_Value: 0
+  greenOutRedIn:
+    m_OverrideState: 0
+    m_Value: 0
+  greenOutGreenIn:
+    m_OverrideState: 0
+    m_Value: 100
+  greenOutBlueIn:
+    m_OverrideState: 0
+    m_Value: 0
+  blueOutRedIn:
+    m_OverrideState: 1
+    m_Value: 30
+  blueOutGreenIn:
+    m_OverrideState: 1
+    m_Value: 28
+  blueOutBlueIn:
+    m_OverrideState: 1
+    m_Value: 64

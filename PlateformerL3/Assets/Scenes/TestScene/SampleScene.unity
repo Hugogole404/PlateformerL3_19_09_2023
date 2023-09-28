@@ -2268,6 +2268,10 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7084585929433202663, guid: 631560b8fe5968b4ca0b05daa1491b2e, type: 3}
+      propertyPath: _groundOffset
+      value: -0.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 7084585929433202663, guid: 631560b8fe5968b4ca0b05daa1491b2e, type: 3}
       propertyPath: _gravityUpJump
       value: 0.8
       objectReference: {fileID: 0}
@@ -2339,7 +2343,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5996056255628092613, guid: 631560b8fe5968b4ca0b05daa1491b2e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
