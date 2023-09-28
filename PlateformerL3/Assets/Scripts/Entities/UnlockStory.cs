@@ -15,18 +15,6 @@ public class UnlockStory : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        //if ((collision.GetComponent<PlayerController>() != null))
-        //{
-        //    //_isActive = !_isActive;
-        //    //Story.SetActive(_isActive);
-        //    //playerController._isPaused = !_isActive;
-        //    //_isInObject = true;
-
-        //    _isActive = true;
-        //    Story.SetActive(_isActive);
-        //    playerController._isPaused = true;
-        //}
-
         if ((collision.GetComponent<PlayerController>() != null))
         {
             _isActive = true;
