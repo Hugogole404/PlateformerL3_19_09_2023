@@ -117,6 +117,11 @@ public class MenuController : MonoBehaviour
         StartCoroutine(ConfirmationBox());
     }
 
+    public void LoadGame()
+    {
+        SceneManager.LoadScene("SceneLDTest");
+    }
+
     public void QuitButton()
     {
         Application.Quit();
