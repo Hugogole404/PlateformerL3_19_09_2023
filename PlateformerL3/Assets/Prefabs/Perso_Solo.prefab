@@ -249,7 +249,7 @@ MonoBehaviour:
   _player: {fileID: 4059971287021786064}
   _inputJump: 0
   _rb: {fileID: 1433403160220054140}
-  _walkSpeed: 8
+  _walkSpeed: 9
   _walkSpeedMemory: 0
   _acceleration: 19.5
   _groundOffset: -1.64
