@@ -117,4 +117,9 @@ public class MenuController : MonoBehaviour
         StartCoroutine(ConfirmationBox());
     }
 
+    public void QuitButton()
+    {
+        Application.Quit();
+    }
+
 }
