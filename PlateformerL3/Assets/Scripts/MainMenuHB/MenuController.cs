@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 using TMPro;
 using UnityEngine.UIElements;
 
-public class OptionsController : MonoBehaviour
+public class MenuController : MonoBehaviour
 {
     [Header("Sound Settings")]
     [SerializeField] private TMP_Text soundTextValue = null;
@@ -55,12 +55,12 @@ public class OptionsController : MonoBehaviour
         }
     }
 
-//    fullScreenToggle.isOn = false;
-//    Screen.fullScreen = false;
+    //    fullScreenToggle.isOn = false;
+    //    Screen.fullScreen = false;
 
-//    Resolution currentResolution = Screen.currentResolution;
-//    Screen.SetResolution(currentResolution.width, currentResolution.height, Screen.fullScreen);
-//    resolutionDropdown.value = resolutions.Length;
+    //    Resolution currentResolution = Screen.currentResolution;
+    //    Screen.SetResolution(currentResolution.width, currentResolution.height, Screen.fullScreen);
+    //    resolutionDropdown.value = resolutions.Length;
     public void SetResolution(int resolutionIndex)
     {
         Resolution resolution = resolutions[resolutionIndex];

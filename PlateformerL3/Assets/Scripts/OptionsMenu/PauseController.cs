@@ -24,9 +24,9 @@ namespace PauseMenuSystem
         [Header("Confirmation Object")]
         [SerializeField] private GameObject confirmationPrompt = null;
 
-        [Header("Controller Sensitivity")]
+        /*[Header("Controller Sensitivity")]
         [SerializeField] private TMP_Text controllerSenText = null;
-        [SerializeField] private Slider controllerSenSlider = null;
+        [SerializeField] private Slider controllerSenSlider = null;*/
 
         [Header("Brightness Setting")]
         [SerializeField] private Brightness brightnessEffect = null;
