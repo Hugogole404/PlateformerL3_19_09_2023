@@ -8,7 +8,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [Header("SpawnPoint")]
-    [SerializeField] GameObject _spawnPoint;
+    public GameObject _spawnPoint;
     [SerializeField] GameObject _player;
 
     [Header("Inputs")]
@@ -56,6 +56,7 @@ public class PlayerController : MonoBehaviour
     [Header("Fly")]
     [SerializeField] bool _isFlying = false;
     [SerializeField] List<GameObject> _windArea = new List<GameObject>();
+
 
     //[Header("Corner")]
     //[SerializeField] float[] direction;
