@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Dialogue : MonoBehaviour
 {
@@ -12,8 +13,7 @@ public class Dialogue : MonoBehaviour
 
     private int index;
 
-    private string _menuName = "MainMenu";
-    //[SerializeField] private ButtonHovered ButtonHovered;
+    public string _sceneName;
 
 
     void Start()
@@ -22,7 +22,6 @@ public class Dialogue : MonoBehaviour
         StartDialogue();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -67,7 +66,7 @@ public class Dialogue : MonoBehaviour
             gameObject.SetActive(false);
 
             // Go Back to scene
-            //ButtonHovered.ClickSceneName(_menuName);
+            SceneManager.LoadScene(_sceneName);
         }
     }
 }
