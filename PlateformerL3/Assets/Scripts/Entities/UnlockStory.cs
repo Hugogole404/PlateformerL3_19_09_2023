@@ -12,11 +12,13 @@ public class UnlockStory : MonoBehaviour
     public bool _isActive = false;
     private bool _isInObject = false;
     public GameObject obj;
+    [SerializeField] AudioSource CollectSound;
 
     private void OnTriggerStay2D(Collider2D collision)
     {
         if ((collision.GetComponent<PlayerController>() != null))
         {
+            CollectSound.Play();
             _isActive = true;
             Story.SetActive(_isActive);
             playerController._isPaused = true;

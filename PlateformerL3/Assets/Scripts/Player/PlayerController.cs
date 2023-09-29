@@ -43,6 +43,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] PhysicsMaterial2D _physicsNoFriction;
     [SerializeField] int _jumpTankMax;
     [SerializeField] int _currentJumpTank;
+    [SerializeField] AudioSource _jumpSoundOther;
 
     [Header("Slope")]
     [SerializeField] Collider2D _collider;
@@ -56,6 +57,11 @@ public class PlayerController : MonoBehaviour
     [Header("Fly")]
     [SerializeField] bool _isFlying = false;
     [SerializeField] List<GameObject> _windArea = new List<GameObject>();
+    [SerializeField] AudioSource FlySound;
+
+    [Header("Ambiance Sounds")]
+    [SerializeField] AudioSource BackgroundSong;
+    [SerializeField] AudioSource AmbianceSounds;
 
 
     //[Header("Corner")]
@@ -80,7 +86,15 @@ public class PlayerController : MonoBehaviour
             for (int i = 0; i < _windArea.Count; i++)
             {
                 //_isFlying = !_isFlying;
+                //FlySound.Play();
                 _windArea[i].SetActive(true);
+                if (Input.GetKeyDown(KeyCode.LeftControl))
+                {
+                    if (!FlySound.isPlaying)
+                    {
+                        FlySound.Play();
+                    }
+                }
             }
         }
         else
@@ -88,6 +102,7 @@ public class PlayerController : MonoBehaviour
             for (int i = 0; i < _windArea.Count; i++)
             {
                 _windArea[i].SetActive(false);
+                FlySound.Stop();
             }
         }
     }
@@ -151,11 +166,14 @@ public class PlayerController : MonoBehaviour
 
         if ((_inputJump && _rb.velocity.y <= 0 && (_isGrounded || _timeSinceGrounded < _coyoteTime) && _timerNoJump <= 0 && _timeSinceJumpPressed < _jumpInputTimer))
         {
+            _jumpSoundOther.Play(0);
             _rb.velocity = new Vector2(_rb.velocity.x, _jumpForce);
             _timerNoJump = _timeMinBetweenJump;
         }
         else if ((_inputJump && _timeSinceJumpPressed < _jumpInputTimer) && !_isGrounded && _currentJumpTank > 0)
         {
+            if(_currentJumpTank == 1)
+                _jumpSoundOther.Play(0);
             _rb.velocity = new Vector2(_rb.velocity.x, _jumpForce);
         }
 
@@ -218,6 +236,11 @@ public class PlayerController : MonoBehaviour
     {
         _player.transform.position = _spawnPoint.transform.position;
         _walkSpeedMemory = _walkSpeed;
+    }
+    private void Start()
+    {
+        BackgroundSong.Play();
+        AmbianceSounds.Play();
     }
 
     private void Update()
