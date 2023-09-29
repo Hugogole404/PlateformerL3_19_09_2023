@@ -59,7 +59,7 @@ Material:
     m_Floats:
     - _AlphaClip: 0
     - _AlphaToMask: 0
-    - _Bits: 8
+    - _Bits: 6
     - _Blend: 0
     - _CastShadows: 1
     - _Cull: 2
@@ -72,5 +72,5 @@ Material:
     - _ZWrite: 0
     - _ZWriteControl: 0
     m_Colors:
-    - _Color: {r: 12.996038, g: 6.406887, b: 2.7585936, a: 1}
+    - _Color: {r: 14.532503, g: 20.915752, b: 23.16459, a: 1}
   m_BuildTextureStacks: []
