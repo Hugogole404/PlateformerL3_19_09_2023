@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-7547198696027203125
+--- !u!114 &-657252575823881308
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20,8 +20,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Shader Graphs_PixelArtShader
-  m_Shader: {fileID: -6465566751694194690, guid: a1f9873a6cdd094448b128b9081d1d9c, type: 3}
+  m_Name: Shader Graphs_FirefliesPixelShader 1
+  m_Shader: {fileID: -6465566751694194690, guid: 014743996625bff489064c08133eac06, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
@@ -39,6 +39,10 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _SampleTexture2D_c4ab2d65f6f74e65a6c7ee4d471579b9_Texture_1_Texture2D:
+        m_Texture: {fileID: 10300, guid: 0000000000000000f000000000000000, type: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _Texture2D:
         m_Texture: {fileID: 10300, guid: 0000000000000000f000000000000000, type: 0}
         m_Scale: {x: 1, y: 1}
@@ -59,7 +63,7 @@ Material:
     m_Floats:
     - _AlphaClip: 0
     - _AlphaToMask: 0
-    - _Bits: 6
+    - _Bits: 8
     - _Blend: 0
     - _CastShadows: 1
     - _Cull: 2
@@ -72,5 +76,5 @@ Material:
     - _ZWrite: 0
     - _ZWriteControl: 0
     m_Colors:
-    - _Color: {r: 14.532503, g: 20.915752, b: 23.16459, a: 1}
+    - _Color: {r: 10.566576, g: 18.410578, b: 22.627417, a: 1}
   m_BuildTextureStacks: []
