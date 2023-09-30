@@ -31,11 +31,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float _timeMinBetweenJump;
     [SerializeField] float _jumpForce;
     [SerializeField] float _velocityFallMin;
-    [SerializeField][Tooltip("Gravity when the player goes up and press jump")] private float _gravityUpJump;
+    [SerializeField] [Tooltip("Gravity when the player goes up and press jump")] private float _gravityUpJump;
     [SerializeField] float _jumpInputTimer = 0.1f;
     [SerializeField] Collider2D[] _collidersGround;
     [SerializeField] float _timerNoJump;
-    [SerializeField][Tooltip("Gravity otherwise")] private float _gravity;
+    [SerializeField] [Tooltip("Gravity otherwise")] private float _gravity;
     [SerializeField] float _timeSinceJumpPressed;
     [SerializeField] float _timeSinceGrounded;
     [SerializeField] float _coyoteTime;
@@ -63,6 +63,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] AudioSource BackgroundSong;
     [SerializeField] AudioSource AmbianceSounds;
 
+    [Header("Animations")]
+    public Animator Anim;
+    public SpriteRenderer Sprite;
 
     //[Header("Corner")]
     //[SerializeField] float[] direction;
@@ -70,12 +73,29 @@ public class PlayerController : MonoBehaviour
     //[SerializeField] private BoxCollider2D _offsetToReplace;
     //[SerializeField] private BoxCollider2D offsetToReplace;
     //[SerializeField] private Vector2 _collisionBox;
-
+    void AnimationUpdate()
+    {
+        if (_inputs.x > 0f)
+        {
+            Anim.SetBool("Walk", true);
+            Sprite.flipX = false;
+        }
+        else if (_inputs.x < 0f)
+        {
+            Anim.SetBool("Walk", true);
+            Sprite.flipX = true;
+        }
+        else
+        {
+            Anim.SetBool("Walk", false);
+        }
+    }
     void HandleInputs()
     {
         _inputs.x = Input.GetAxisRaw("Horizontal");
         _inputs.y = Input.GetAxisRaw("Vertical");
         _inputJump = Input.GetKey(KeyCode.UpArrow);
+
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
             _timeSinceJumpPressed = 0;
@@ -92,6 +112,7 @@ public class PlayerController : MonoBehaviour
                 {
                     if (!FlySound.isPlaying)
                     {
+                        Anim.SetBool("Fly", true);
                         FlySound.Play();
                     }
                 }
@@ -103,6 +124,7 @@ public class PlayerController : MonoBehaviour
             {
                 _windArea[i].SetActive(false);
                 FlySound.Stop();
+                Anim.SetBool("Fly", false);
             }
         }
     }
@@ -167,15 +189,21 @@ public class PlayerController : MonoBehaviour
         if ((_inputJump && _rb.velocity.y <= 0 && (_isGrounded || _timeSinceGrounded < _coyoteTime) && _timerNoJump <= 0 && _timeSinceJumpPressed < _jumpInputTimer))
         {
             _jumpSoundOther.Play(0);
+            Anim.SetBool("Jump", true);
             _rb.velocity = new Vector2(_rb.velocity.x, _jumpForce);
             _timerNoJump = _timeMinBetweenJump;
         }
         else if ((_inputJump && _timeSinceJumpPressed < _jumpInputTimer) && !_isGrounded && _currentJumpTank > 0)
         {
-            if(_currentJumpTank == 1)
+            if (_currentJumpTank == 1)
+            {
                 _jumpSoundOther.Play(0);
+                Anim.SetBool("Jump", true);
+            }
             _rb.velocity = new Vector2(_rb.velocity.x, _jumpForce);
         }
+        else
+            Anim.SetBool("Jump", false);
 
 
         // limiter vit chute : 
@@ -249,6 +277,7 @@ public class PlayerController : MonoBehaviour
         {
             HandleInputs();
         }
+        AnimationUpdate();
     }
 
     private void FixedUpdate()
