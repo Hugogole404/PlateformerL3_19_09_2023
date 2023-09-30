@@ -3855,7 +3855,10 @@ MonoBehaviour:
   - ...
   - Where am I ?
   - What am I doing here ?
-  - I don't remember anything.
+  - I don't remember anything...
+  - Oh...
+  - There's is something up there.
+  - I should go see it.
   textSpeed: 0.09
   _sceneName: SampleScene
 --- !u!1 &395085772
