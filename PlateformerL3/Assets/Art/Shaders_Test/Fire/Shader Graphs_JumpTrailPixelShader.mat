@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Shader Graphs_FirePixelShader
+  m_Name: Shader Graphs_JumpTrailPixelShader
   m_Shader: {fileID: -6465566751694194690, guid: 014743996625bff489064c08133eac06, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -50,7 +50,7 @@ Material:
     m_Floats:
     - _AlphaClip: 0
     - _AlphaToMask: 0
-    - _Bits: 8
+    - _Bits: 4
     - _Blend: 0
     - _CastShadows: 1
     - _Cull: 2
@@ -63,7 +63,7 @@ Material:
     - _ZWrite: 0
     - _ZWriteControl: 0
     m_Colors:
-    - _Color: {r: 15.693327, g: 5.2915006, b: 4.2194324, a: 1}
+    - _Color: {r: 2.608238, g: 2.608238, b: 2.608238, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &3558774636190169430
 MonoBehaviour:
