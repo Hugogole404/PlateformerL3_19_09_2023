@@ -645,6 +645,10 @@ PrefabInstance:
       propertyPath: m_RenderMode
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 195250812266097304, guid: 75bdbc1b306de60408ba09339c7229f6, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 322666031555057955, guid: 75bdbc1b306de60408ba09339c7229f6, type: 3}
       propertyPath: m_SizeDelta.x
       value: 170
@@ -933,6 +937,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 2133263358024073490, guid: 75bdbc1b306de60408ba09339c7229f6, type: 3}
+      propertyPath: m_Volume
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 2150377675982868095, guid: 75bdbc1b306de60408ba09339c7229f6, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
@@ -954,6 +962,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1623782036}
     - target: {fileID: 2632966315199106488, guid: 75bdbc1b306de60408ba09339c7229f6, type: 3}
+      propertyPath: defaultMusic
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2632966315199106488, guid: 75bdbc1b306de60408ba09339c7229f6, type: 3}
       propertyPath: musicTextValue
       value: 
       objectReference: {fileID: 1074222107}
@@ -961,6 +973,10 @@ PrefabInstance:
       propertyPath: soundTextValue
       value: 
       objectReference: {fileID: 1314788890}
+    - target: {fileID: 2632966315199106488, guid: 75bdbc1b306de60408ba09339c7229f6, type: 3}
+      propertyPath: brightnessEffect
+      value: 
+      objectReference: {fileID: 553360533}
     - target: {fileID: 2632966315199106488, guid: 75bdbc1b306de60408ba09339c7229f6, type: 3}
       propertyPath: brightnessSlider
       value: 
@@ -1611,7 +1627,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8538525023199592577, guid: 75bdbc1b306de60408ba09339c7229f6, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8542441223174151158, guid: 75bdbc1b306de60408ba09339c7229f6, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1637,7 +1653,10 @@ PrefabInstance:
     - {fileID: 7807823761243575876, guid: 75bdbc1b306de60408ba09339c7229f6, type: 3}
     - {fileID: 369194406754379129, guid: 75bdbc1b306de60408ba09339c7229f6, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2198446577340123876, guid: 75bdbc1b306de60408ba09339c7229f6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 75bdbc1b306de60408ba09339c7229f6, type: 3}
 --- !u!114 &2871323244282494814 stripped
 MonoBehaviour:
