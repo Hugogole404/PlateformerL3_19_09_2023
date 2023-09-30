@@ -1,0 +1,416 @@
+fileFormatVersion: 2
+guid: 7b870c8c900b54b409ceabf66b0a0158
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Chara_Jump_Statioc_Frame_0
+    originalName: 
+    pivot: {x: 0.53846157, y: -0.10447761}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 55
+      y: 81
+      width: 39
+      height: 67
+    spriteID: 1aa4bebde1124464680676195cdee304
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 55, y: 81}
+  - name: Chara_Jump_Statioc_Frame_1
+    originalName: 
+    pivot: {x: 0.5, y: -0.10144927}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 55
+      y: 4
+      width: 40
+      height: 69
+    spriteID: 3c40ab92103faec4281bf1f396ca3d39
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 55, y: 4}
+  - name: Chara_Jump_Statioc_Frame_2
+    originalName: 
+    pivot: {x: 0.5116279, y: -0.097222224}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 85
+      width: 43
+      height: 72
+    spriteID: 99da8adb168b46644add4a1745447e34
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 85}
+  - name: Chara_Jump_Statioc_Frame_3
+    originalName: 
+    pivot: {x: 0.46511626, y: -0.09589041}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 43
+      height: 73
+    spriteID: d4059a3f2310acd49b425c8444023c7c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Chara_Jump_Statioc_Frame_4
+    originalName: 
+    pivot: {x: 0.5, y: -0.09589041}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 165
+      width: 42
+      height: 73
+    spriteID: 62b67530d891641408ad128be7afb5b2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 165}
+  - name: Chara_Jump_Statioc_Frame_5
+    originalName: 
+    pivot: {x: 0.61764705, y: -0.10769231}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 55
+      y: 156
+      width: 34
+      height: 65
+    spriteID: 54d8b55393e66f443b13ef41c1af4be7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 55, y: 156}
+  - name: Chara_Jump_Statioc_Frame_6
+    originalName: 
+    pivot: {x: 0.5714286, y: -0.118644066}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 103
+      y: 131
+      width: 35
+      height: 59
+    spriteID: 9c1f44f578da98242a7611bcc228aa6e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 103, y: 131}
+  - name: Chara_Jump_Statioc_Frame_7
+    originalName: 
+    pivot: {x: 0.57894737, y: -0.14}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 103
+      y: 198
+      width: 38
+      height: 50
+    spriteID: 88c289d89918f9e4c804d1c3c586bcbf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 103, y: 198}
+  - name: Chara_Jump_Statioc_Frame_8
+    originalName: 
+    pivot: {x: 0.5609756, y: -0.13725491}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 103
+      y: 72
+      width: 41
+      height: 51
+    spriteID: c60e7cc61dcd66149a1e9506b99f00de
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 103, y: 72}
+  - name: Chara_Jump_Statioc_Frame_9
+    originalName: 
+    pivot: {x: 0.55813956, y: -0.11666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 103
+      y: 4
+      width: 43
+      height: 60
+    spriteID: e6ea0cfa400fceb47876db4067c9bca0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 103, y: 4}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -1286645990
+    name: Chara_Jump_Statioc
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Chara_Jump_Statioc_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 11
+        y: 7
+        width: 39
+        height: 67
+      spriteId: 1aa4bebde1124464680676195cdee304
+    - name: Chara_Jump_Statioc_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 12
+        y: 7
+        width: 40
+        height: 69
+      spriteId: 3c40ab92103faec4281bf1f396ca3d39
+    - name: Chara_Jump_Statioc_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 10
+        y: 7
+        width: 43
+        height: 72
+      spriteId: 99da8adb168b46644add4a1745447e34
+    - name: Chara_Jump_Statioc_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 12
+        y: 7
+        width: 43
+        height: 73
+      spriteId: d4059a3f2310acd49b425c8444023c7c
+    - name: Chara_Jump_Statioc_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 11
+        y: 7
+        width: 42
+        height: 73
+      spriteId: 62b67530d891641408ad128be7afb5b2
+    - name: Chara_Jump_Statioc_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 11
+        y: 7
+        width: 34
+        height: 65
+      spriteId: 54d8b55393e66f443b13ef41c1af4be7
+    - name: Chara_Jump_Statioc_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 12
+        y: 7
+        width: 35
+        height: 59
+      spriteId: 9c1f44f578da98242a7611bcc228aa6e
+    - name: Chara_Jump_Statioc_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 10
+        y: 7
+        width: 38
+        height: 50
+      spriteId: 88c289d89918f9e4c804d1c3c586bcbf
+    - name: Chara_Jump_Statioc_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 9
+        y: 7
+        width: 41
+        height: 51
+      spriteId: c60e7cc61dcd66149a1e9506b99f00de
+    - name: Chara_Jump_Statioc_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 8
+        y: 7
+        width: 43
+        height: 60
+      spriteId: e6ea0cfa400fceb47876db4067c9bca0
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 64, y: 80}

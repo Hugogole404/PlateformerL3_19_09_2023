@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
 using UnityEngine.UIElements;
+using static UnityEditorInternal.ReorderableList;
 
 namespace MenuControllerSystem
 {
@@ -24,7 +25,6 @@ namespace MenuControllerSystem
 
         [Header("Confirmation Object")]
         [SerializeField] private GameObject confirmationPrompt = null;
-        [SerializeField] private GameObject noSavedGameDialog = null;
 
         [Header("Brightness Setting")]
         [SerializeField] private Brightness brightnessEffect = null;
@@ -45,6 +45,7 @@ namespace MenuControllerSystem
 
         [Header("Levels To Load")]
         public string _newGameButtonLevel;
+  
 
         [Space(10)]
         [SerializeField] private UnityEngine.UIElements.Toggle fullScreenToggle;
@@ -64,7 +65,31 @@ namespace MenuControllerSystem
             GetComponent<AudioSource>().Play();
         }
 
-        //gestion résolution
+        //Son
+
+        public void SetSoundVolume(float soundVolume)
+        {
+            AudioListener.volume = soundVolume;
+            soundTextValue.text = soundVolume.ToString("0.0");
+        }
+
+        public void SetMusicVolume(float musicVolume)
+        {
+            AudioListener.volume = musicVolume;
+            soundTextValue.text = musicVolume.ToString("0.0");
+        }
+        public void SoundApply()
+        {
+            PlayerPrefs.SetFloat("soundVolume", AudioListener.volume);
+            StartCoroutine(ConfirmationBox());
+        }
+        public void MusicApply()
+        {
+            PlayerPrefs.SetFloat("musicVolume", AudioListener.volume);
+            StartCoroutine(ConfirmationBox());
+        }
+
+        //gestion graphique
         private void Start()
         {
             resolutions = Screen.resolutions;
@@ -101,37 +126,13 @@ namespace MenuControllerSystem
             Resolution resolution = resolutions[resolutionIndex];
             Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
         }
-
-        public void SetSoundVolume(float soundVolume)
-        {
-            AudioListener.volume = soundVolume;
-            soundTextValue.text = soundVolume.ToString("0.0");
-        }
-
-        public void SetMusicVolume(float musicVolume)
-        {
-            AudioListener.volume = musicVolume;
-            soundTextValue.text = musicVolume.ToString("0.0");
-        }
-
-        public void SoundApply()
-        {
-            PlayerPrefs.SetFloat("soundVolume", AudioListener.volume);
-            StartCoroutine(ConfirmationBox());
-        }
-        public void MusicApply()
-        {
-            PlayerPrefs.SetFloat("musicVolume", AudioListener.volume);
-            StartCoroutine(ConfirmationBox());
-        }
+       
         public IEnumerator ConfirmationBox()
         {
             confirmationPrompt.SetActive(true);
             yield return new WaitForSeconds(1);
             confirmationPrompt.SetActive(false);
-        }
-
-        
+        }  
 
         public void setFullScreen(bool isFullscreen)
         {
@@ -148,7 +149,36 @@ namespace MenuControllerSystem
             StartCoroutine(ConfirmationBox());
         }
 
-     
+        public void ResetButton(string OptionsMenu)
+        {
+            if (OptionsMenu == "Options")
+            {
+                //brightnessEffect.brightness = defaultBrightness;
+                brightnessSlider.value = defaultBrightness;
+                brightnessTextValue.text = defaultBrightness.ToString("0.0");
+
+                //fullScreenToggle.isOn = false;
+                Screen.fullScreen = false;
+
+                Resolution currentResolution = Screen.currentResolution;
+                Screen.SetResolution(currentResolution.width, currentResolution.height, Screen.fullScreen);
+                resolutionDropdown.value = resolutions.Length;
+                GraphicsApply();
+            
+                AudioListener.volume = defaultSound;
+                soundSlider.value = defaultSound;
+                soundTextValue.text = defaultSound.ToString("0.0");
+                SoundApply();
+
+                AudioListener.volume = defaultMusic;
+                soundSlider.value = defaultMusic;
+                soundTextValue.text = defaultMusic.ToString("0.0");
+                SoundApply();
+
+            }
+
+        }
+
 
     }
 }
