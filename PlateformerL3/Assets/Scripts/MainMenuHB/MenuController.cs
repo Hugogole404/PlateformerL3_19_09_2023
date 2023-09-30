@@ -48,7 +48,7 @@ namespace MenuControllerSystem
   
 
         [Space(10)]
-        [SerializeField] private UnityEngine.UIElements.Toggle fullScreenToggle;
+        [SerializeField] private UnityEngine.UI.Toggle fullScreenToggle;
 
         //commencer,quitter le jeu & audioSource click
         public void LoadGame()
@@ -113,13 +113,6 @@ namespace MenuControllerSystem
             resolutionDropdown.value = currentResolutionIndex;
             resolutionDropdown.RefreshShownValue();
         }
-
-        //luminosité (shader affilié)
-        public void SetBrigthness(float brightness)
-        {
-            _brightnessLevel = brightness;
-            brightnessTextValue.text = brightness.ToString("0.0");
-        }
        
         public void SetResolution(int resolutionIndex)
         {
@@ -132,7 +125,13 @@ namespace MenuControllerSystem
             confirmationPrompt.SetActive(true);
             yield return new WaitForSeconds(1);
             confirmationPrompt.SetActive(false);
-        }  
+        }
+
+        public void SetBrigthness(float brightness)
+        {
+            _brightnessLevel = brightness;
+            brightnessTextValue.text = brightness.ToString("0.0");
+        }
 
         public void setFullScreen(bool isFullscreen)
         {
@@ -157,7 +156,7 @@ namespace MenuControllerSystem
                 brightnessSlider.value = defaultBrightness;
                 brightnessTextValue.text = defaultBrightness.ToString("0.0");
 
-                //fullScreenToggle.isOn = false;
+                fullScreenToggle.isOn = false;
                 Screen.fullScreen = false;
 
                 Resolution currentResolution = Screen.currentResolution;
