@@ -3018,7 +3018,7 @@ ParticleSystem:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  moveWithTransform: 0
+  moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
   randomSeed: 0
@@ -3028,7 +3028,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 5
+      scalar: 2
       minScalar: 0.5
       maxCurve:
         serializedVersion: 2
@@ -3782,7 +3782,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 2
+      scalar: 4
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -4221,7 +4221,7 @@ ParticleSystem:
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
-        key1: {r: 1, g: 1, b: 1, a: 0.84313726}
+        key1: {r: 1, g: 1, b: 1, a: 0.827451}
         key2: {r: 0, g: 0, b: 0, a: 0}
         key3: {r: 0, g: 0, b: 0, a: 0}
         key4: {r: 0, g: 0, b: 0, a: 0}
@@ -4237,7 +4237,7 @@ ParticleSystem:
         ctime6: 0
         ctime7: 0
         atime0: 0
-        atime1: 48188
+        atime1: 49151
         atime2: 65535
         atime3: 0
         atime4: 0
@@ -4399,9 +4399,10 @@ ParticleSystem:
     uvChannelMask: -1
     rowMode: 1
     sprites:
-    - sprite: {fileID: -793478445, guid: 1d9cb2eb07be60e468db9ae52328f9bf, type: 3}
-    - sprite: {fileID: 103671586, guid: 1d9cb2eb07be60e468db9ae52328f9bf, type: 3}
-    - sprite: {fileID: 222039431, guid: 1d9cb2eb07be60e468db9ae52328f9bf, type: 3}
+    - sprite: {fileID: -1768993069, guid: 1d9cb2eb07be60e468db9ae52328f9bf, type: 3}
+    - sprite: {fileID: 484449973, guid: 1d9cb2eb07be60e468db9ae52328f9bf, type: 3}
+    - sprite: {fileID: -1395717195, guid: 1d9cb2eb07be60e468db9ae52328f9bf, type: 3}
+    - sprite: {fileID: 90605665, guid: 1d9cb2eb07be60e468db9ae52328f9bf, type: 3}
     flipU: 0
     flipV: 0
   VelocityModule:
@@ -4409,7 +4410,7 @@ ParticleSystem:
     x:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1.68
+      scalar: 1.16
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -4462,7 +4463,7 @@ ParticleSystem:
     y:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1.58
+      scalar: 1.96
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -4515,7 +4516,7 @@ ParticleSystem:
     z:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.5
+      scalar: 0
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -4989,7 +4990,7 @@ ParticleSystem:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
-    inWorldSpace: 0
+    inWorldSpace: 1
   InheritVelocityModule:
     enabled: 0
     m_Mode: 0
