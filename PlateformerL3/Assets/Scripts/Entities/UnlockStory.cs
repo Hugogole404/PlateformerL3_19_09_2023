@@ -13,6 +13,7 @@ public class UnlockStory : MonoBehaviour
     private bool _isInObject = false;
     public GameObject obj;
     [SerializeField] AudioSource CollectSound;
+    public NotesCount CounterNotes;
 
     private void OnTriggerStay2D(Collider2D collision)
     {
@@ -53,6 +54,7 @@ public class UnlockStory : MonoBehaviour
             playerController._isPaused = false;
             Destroy(obj);
             playerController._walkSpeed = playerController._walkSpeedMemory;
+            CounterNotes.CountNotes += 1;
         }
     }
 
