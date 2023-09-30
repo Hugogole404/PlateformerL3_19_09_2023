@@ -273,8 +273,12 @@ MonoBehaviour:
   _physicsNoFriction: {fileID: 6200000, guid: 4b32e4c1f484e56479df1cc87ffeaddb, type: 2}
   _jumpTankMax: 2
   _currentJumpTank: 0
+  _jumpSoundOther: {fileID: 3076792255988703902, guid: 058c3512984b8ce4a9a8dfa50d544da5, type: 3}
   _collider: {fileID: 5307801049736090130}
   _isOnSlope: 0
   _isPaused: 0
   _isFlying: 1
   _windArea: []
+  FlySound: {fileID: 3076792255988703902, guid: 058c3512984b8ce4a9a8dfa50d544da5, type: 3}
+  BackgroundSong: {fileID: 7485681217730039645, guid: 380370a2dfc3f394d882c07cf626a0cd, type: 3}
+  AmbianceSounds: {fileID: 7485681217730039645, guid: 380370a2dfc3f394d882c07cf626a0cd, type: 3}
