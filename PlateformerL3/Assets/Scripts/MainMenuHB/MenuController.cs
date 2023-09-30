@@ -157,7 +157,7 @@ namespace MenuControllerSystem
                 brightnessSlider.value = defaultBrightness;
                 brightnessTextValue.text = defaultBrightness.ToString("0.0");
 
-                fullScreenToggle.isOn = false;
+                //fullScreenToggle.isOn = false;
                 Screen.fullScreen = false;
 
                 Resolution currentResolution = Screen.currentResolution;
