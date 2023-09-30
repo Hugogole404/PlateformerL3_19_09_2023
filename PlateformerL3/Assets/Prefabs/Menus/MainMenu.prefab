@@ -326,7 +326,6 @@ RectTransform:
   m_LocalScale: {x: 1.0083534, y: 1.0083534, z: 1.0083534}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 5209305860781359309}
   - {fileID: 8071362410394566146}
   - {fileID: 3726751375224185761}
   - {fileID: 5836117416244981300}
@@ -3521,17 +3520,17 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5208254179988390884}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -3.1260908}
-  m_LocalScale: {x: 0.43645823, y: 0.43645823, z: 0.43645823}
+  m_LocalPosition: {x: 0, y: 0, z: 2.799058}
+  m_LocalScale: {x: 0.44010413, y: 0.44010413, z: 0.44010413}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5806986723179372473}
-  m_Father: {fileID: 741483736727019810}
+  m_Father: {fileID: 4584468226155661557}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.002533, y: -12.4469}
+  m_AnchoredPosition: {x: 49.99744, y: -12.550875}
   m_SizeDelta: {x: 4399, y: 2531.4392}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &9075647531168757985
@@ -4235,6 +4234,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 5209305860781359309}
   - {fileID: 741483736727019810}
   - {fileID: 3530553827277323390}
   - {fileID: 8889853794504333297}
@@ -5497,19 +5497,19 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7640711995409856196}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.10474965}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7292760715314654109}
   - {fileID: 7164679774157989623}
   - {fileID: 3596158698515505765}
-  m_Father: {fileID: 5775940736605439090}
+  m_Father: {fileID: 3530553827277323390}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 230.6, y: -3.705}
+  m_AnchoredPosition: {x: 114.89, y: -109.704956}
   m_SizeDelta: {x: 205, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1291161884199463499
@@ -5600,18 +5600,18 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: 1920 x 1080
+    - m_Text: Option A
       m_Image: {fileID: 0}
-    - m_Text: 1440 x 900
+    - m_Text: Option B
       m_Image: {fileID: 0}
-    - m_Text: 1280 x 720
+    - m_Text: Option C
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OptionsController, Assembly-CSharp
-        m_MethodName: 
+      - m_Target: {fileID: 2632966315199106488}
+        m_TargetAssemblyTypeName: MenuControllerSystem.MenuController, Assembly-CSharp
+        m_MethodName: SetResolution
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5765,15 +5765,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e0e08bd6c537584db390b5522e38584, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defaultBrightness: 1
+  defaultSound: 0.5
+  defaultMusic: 0.5
+  confirmationPrompt: {fileID: 0}
+  noSavedGameDialog: {fileID: 0}
+  brightnessEffect: {fileID: 0}
+  brightnessSlider: {fileID: 0}
+  brightnessTextValue: {fileID: 0}
   soundTextValue: {fileID: 0}
   soundSlider: {fileID: 0}
   musicTextValue: {fileID: 0}
   musicSlider: {fileID: 0}
-  confirmationPrompt: {fileID: 0}
-  brightnessSlider: {fileID: 0}
-  brightnessTextValue: {fileID: 0}
-  defaultBrightness: 1
   resolutionDropdown: {fileID: 114498364169341996}
+  _newGameButtonLevel: 
 --- !u!1 &7840238121653538636
 GameObject:
   m_ObjectHideFlags: 0
@@ -5784,7 +5789,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4158640951654885346}
   - component: {fileID: 7197386950044383891}
-  - component: {fileID: 4539163101193801664}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -5822,26 +5826,6 @@ MonoBehaviour:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 5
---- !u!114 &4539163101193801664
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7840238121653538636}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SendPointerHoverToParent: 0
-  m_HorizontalAxis: Horizontal
-  m_VerticalAxis: Vertical
-  m_SubmitButton: Submit
-  m_CancelButton: Cancel
-  m_InputActionsPerSecond: 10
-  m_RepeatDelay: 0.5
-  m_ForceModuleActive: 0
 --- !u!1 &7840529176798978958
 GameObject:
   m_ObjectHideFlags: 0
@@ -7730,6 +7714,7 @@ RectTransform:
   - {fileID: 3307045255624957858}
   - {fileID: 7106288422988686796}
   - {fileID: 6499990482138660881}
+  - {fileID: 8415705911571180551}
   - {fileID: 5775940736605439090}
   - {fileID: 3566339432996452670}
   - {fileID: 1760632829755560059}
@@ -7973,7 +7958,7 @@ GameObject:
   - component: {fileID: 4283278751786184440}
   - component: {fileID: 2922890561898926286}
   m_Layer: 0
-  m_Name: DisplayResolution
+  m_Name: Display
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7991,7 +7976,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 8415705911571180551}
   - {fileID: 8516093847847497595}
   m_Father: {fileID: 3530553827277323390}
   m_RootOrder: -1
