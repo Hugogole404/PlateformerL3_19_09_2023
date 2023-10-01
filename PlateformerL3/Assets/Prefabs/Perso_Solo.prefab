@@ -307,7 +307,7 @@ MonoBehaviour:
   _walkSpeedMemory: 0
   _acceleration: 33
   _groundOffset: -1.64
-  _groundRadius: 0.32
+  _groundRadius: 0.57
   _GroundLayer:
     serializedVersion: 2
     m_Bits: 8
@@ -332,7 +332,7 @@ MonoBehaviour:
   _collider: {fileID: 5307801049736090130}
   _isOnSlope: 0
   _isPaused: 0
-  _isFlying: 1
+  _isFlying: 0
   _windArea: []
   FlySound: {fileID: 3076792255988703902, guid: 058c3512984b8ce4a9a8dfa50d544da5, type: 3}
   BackgroundSong: {fileID: 7485681217730039645, guid: 380370a2dfc3f394d882c07cf626a0cd, type: 3}
