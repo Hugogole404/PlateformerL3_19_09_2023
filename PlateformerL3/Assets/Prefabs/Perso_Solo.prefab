@@ -333,7 +333,8 @@ MonoBehaviour:
   _isOnSlope: 0
   _isPaused: 0
   _isFlying: 0
-  _windArea: []
+  _windArea:
+  - {fileID: 0}
   FlySound: {fileID: 3076792255988703902, guid: 058c3512984b8ce4a9a8dfa50d544da5, type: 3}
   BackgroundSong: {fileID: 7485681217730039645, guid: 380370a2dfc3f394d882c07cf626a0cd, type: 3}
   AmbianceSounds: {fileID: 7485681217730039645, guid: 380370a2dfc3f394d882c07cf626a0cd, type: 3}
