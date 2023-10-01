@@ -150,9 +150,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 8683899847712827790, guid: 5f9e30ccf8301df49b8c3db9790faaa2, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 6a8d32dc981de1348bce80a2e3647e50, type: 3}
+  m_audioClip: {fileID: 8300000, guid: a46e59699593ff84f92f85c9e34ab069, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.46
+  m_Volume: 0.235
   m_Pitch: 0.9
   Loop: 1
   Mute: 0
@@ -4023,7 +4023,7 @@ MonoBehaviour:
   - I'm sorry I left you alone that day...
   - But, I'm happy to see you again.
   - I was so afraid for you...
-  - I don't regret my action, because you were the only important thing for me.
+  - I don't regret my action, because you were the only thing that mattered to me.
   - I'm happy to have seen you one last time...
   - Goodbye Luna...
   textSpeed: 0.1
