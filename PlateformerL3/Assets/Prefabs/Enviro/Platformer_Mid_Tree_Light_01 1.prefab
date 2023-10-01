@@ -31,7 +31,7 @@ Transform:
   m_Children:
   - {fileID: 7492571624721986783}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2651345387173533153
 SpriteRenderer:
@@ -97,6 +97,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 75005940e8f4bd14083b0a6ebccf6d7d, type: 2}
+    - target: {fileID: 1987720655861289275, guid: d837d8e4d1996e3459dbea5e274af524, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4782477626722677773, guid: d837d8e4d1996e3459dbea5e274af524, type: 3}
       propertyPath: m_RenderMode
       value: 0
