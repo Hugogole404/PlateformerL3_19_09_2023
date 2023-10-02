@@ -56,7 +56,6 @@ public class MainMenu : MonoBehaviour
         _buttonMenu.transform.DOComplete();
         FadeObject.SetActive(true);
     }
-
     public void OnClickPlayMenu()
     {
         TransformScale();
