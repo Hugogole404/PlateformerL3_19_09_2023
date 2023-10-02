@@ -14,6 +14,7 @@ public class Dialogue : MonoBehaviour
     private int index;
 
     public string _sceneName;
+    public GameObject Button;
 
 
     void Start()
@@ -66,7 +67,8 @@ public class Dialogue : MonoBehaviour
             gameObject.SetActive(false);
 
             // Go Back to scene
-            SceneManager.LoadScene(_sceneName);
+            Button.SetActive(true);
+            //SceneManager.LoadScene(_sceneName);
         }
     }
 }
