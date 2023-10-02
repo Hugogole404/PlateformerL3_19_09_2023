@@ -18,6 +18,8 @@ public class Dialogue_end : MonoBehaviour
     public Animator _animator;
     public string _sceneName;
 
+    public GameObject Button;
+
 
     void Start()
     {
@@ -77,6 +79,7 @@ public class Dialogue_end : MonoBehaviour
     IEnumerator End()
     {
         yield return new WaitForSeconds(_timer);
-        SceneManager.LoadScene(_sceneName);
+        Button.SetActive(true);
+        //SceneManager.LoadScene(_sceneName);
     }
 }
