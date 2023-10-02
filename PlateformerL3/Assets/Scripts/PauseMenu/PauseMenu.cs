@@ -1,20 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using DG.Tweening;
 using UnityEngine.SceneManagement;
-using UnityEngine.EventSystems;
 
 public class PauseMenu : MonoBehaviour
 {
     public GameObject ui;
-    [SerializeField] Button _button;
-    [SerializeField] TMPro.TextMeshProUGUI Text;
-    [SerializeField] Vector3 _buttonOriginalSize;
-    [SerializeField] Vector3 _buttonResizedSize;
-    [SerializeField] Color ColorInitial;
-    [SerializeField] Color ColorSelected;
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.P))
@@ -43,18 +33,13 @@ public class PauseMenu : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
     }
 
+    public void OptionsMenu()
+    {
+        Debug.Log("options svp");
+    }
+
     public void QuitGame()
     {
         Application.Quit();
-    }
-    public void OnPointerEnterButton()
-    {
-        _button.transform.DOComplete();
-        _button.transform.DOScale(_buttonResizedSize, 0.2f);
-    }
-    public void OnPointerExitButton()
-    {
-        _button.transform.DOComplete();
-        _button.transform.DOScale(_buttonOriginalSize, 0.2f);
     }
 }
