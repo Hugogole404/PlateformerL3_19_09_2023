@@ -19,6 +19,7 @@ public class UnlockStory : MonoBehaviour
     {
         if ((collision.GetComponent<PlayerController>() != null))
         {
+            playerController._spawnPoint.transform.position = transform.position;
             _isActive = true;
             Story.SetActive(_isActive);
             playerController._isPaused = true;
