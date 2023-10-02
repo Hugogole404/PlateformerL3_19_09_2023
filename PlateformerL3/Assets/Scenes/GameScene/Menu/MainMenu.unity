@@ -2806,6 +2806,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -8.709
       objectReference: {fileID: 0}
+    - target: {fileID: 1255616337157136972, guid: 7fa08bc93877b0b4f91a851fd732877d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnClickPlayMenu
+      objectReference: {fileID: 0}
     - target: {fileID: 5137201907223358979, guid: 7fa08bc93877b0b4f91a851fd732877d, type: 3}
       propertyPath: m_Name
       value: Play

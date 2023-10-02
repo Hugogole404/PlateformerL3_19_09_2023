@@ -22,6 +22,10 @@ public class MainMenu : MonoBehaviour/*, IPointerEnterHandler*/
     {
         SceneManager.LoadScene("LEVEL_ART_1_DONTTOUCH");
     }
+    private void LoadSceneGameStartScene()
+    {
+        SceneManager.LoadScene("Start_Scene");
+    }
     private void LoadSceneOptions()
     {
         SceneManager.LoadScene("Options");
@@ -47,6 +51,12 @@ public class MainMenu : MonoBehaviour/*, IPointerEnterHandler*/
         _button.transform.DOPunchScale(new Vector3(0.5f, 0.5f, 0), 0.3f, 3, 0.3f);
         _button.transform.DOComplete();
         FadeObj.SetActive(true);
+    }
+
+    public void OnClickPlayMenu()
+    {
+        Transform();
+        ImageFade.DOFade(1, 0.8f).OnComplete(LoadSceneGameStartScene);
     }
     public void OnClickPlay()
     {
