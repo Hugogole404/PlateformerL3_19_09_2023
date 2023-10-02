@@ -557,6 +557,34 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 141935577}
     - target: {fileID: 7477527470957793493, guid: 7fa08bc93877b0b4f91a851fd732877d, type: 3}
+      propertyPath: FadeObject
+      value: 
+      objectReference: {fileID: 141935575}
+    - target: {fileID: 7477527470957793493, guid: 7fa08bc93877b0b4f91a851fd732877d, type: 3}
+      propertyPath: _buttonMenu
+      value: 
+      objectReference: {fileID: 683128127}
+    - target: {fileID: 7477527470957793493, guid: 7fa08bc93877b0b4f91a851fd732877d, type: 3}
+      propertyPath: ImageFadeObject
+      value: 
+      objectReference: {fileID: 141935577}
+    - target: {fileID: 7477527470957793493, guid: 7fa08bc93877b0b4f91a851fd732877d, type: 3}
+      propertyPath: _buttonNewSize.x
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477527470957793493, guid: 7fa08bc93877b0b4f91a851fd732877d, type: 3}
+      propertyPath: _buttonNewSize.y
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477527470957793493, guid: 7fa08bc93877b0b4f91a851fd732877d, type: 3}
+      propertyPath: _buttonOriginSize.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477527470957793493, guid: 7fa08bc93877b0b4f91a851fd732877d, type: 3}
+      propertyPath: _buttonOriginSize.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477527470957793493, guid: 7fa08bc93877b0b4f91a851fd732877d, type: 3}
       propertyPath: _buttonOriginalSize.x
       value: 1
       objectReference: {fileID: 0}
@@ -574,6 +602,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 603563130431115236, guid: 7fa08bc93877b0b4f91a851fd732877d, type: 3}
   m_PrefabInstance: {fileID: 683128125}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &683128127 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1255616337157136972, guid: 7fa08bc93877b0b4f91a851fd732877d, type: 3}
+  m_PrefabInstance: {fileID: 683128125}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &705715620
 GameObject:
   m_ObjectHideFlags: 0
@@ -1603,6 +1642,34 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 141935577}
     - target: {fileID: 7477527470957793493, guid: 7fa08bc93877b0b4f91a851fd732877d, type: 3}
+      propertyPath: FadeObject
+      value: 
+      objectReference: {fileID: 141935575}
+    - target: {fileID: 7477527470957793493, guid: 7fa08bc93877b0b4f91a851fd732877d, type: 3}
+      propertyPath: _buttonMenu
+      value: 
+      objectReference: {fileID: 1403597264}
+    - target: {fileID: 7477527470957793493, guid: 7fa08bc93877b0b4f91a851fd732877d, type: 3}
+      propertyPath: ImageFadeObject
+      value: 
+      objectReference: {fileID: 141935577}
+    - target: {fileID: 7477527470957793493, guid: 7fa08bc93877b0b4f91a851fd732877d, type: 3}
+      propertyPath: _buttonNewSize.x
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477527470957793493, guid: 7fa08bc93877b0b4f91a851fd732877d, type: 3}
+      propertyPath: _buttonNewSize.y
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477527470957793493, guid: 7fa08bc93877b0b4f91a851fd732877d, type: 3}
+      propertyPath: _buttonOriginSize.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477527470957793493, guid: 7fa08bc93877b0b4f91a851fd732877d, type: 3}
+      propertyPath: _buttonOriginSize.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477527470957793493, guid: 7fa08bc93877b0b4f91a851fd732877d, type: 3}
       propertyPath: _buttonOriginalSize.x
       value: 1
       objectReference: {fileID: 0}
@@ -1620,6 +1687,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 603563130431115236, guid: 7fa08bc93877b0b4f91a851fd732877d, type: 3}
   m_PrefabInstance: {fileID: 1403597262}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1403597264 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1255616337157136972, guid: 7fa08bc93877b0b4f91a851fd732877d, type: 3}
+  m_PrefabInstance: {fileID: 1403597262}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1461455354
 GameObject:
   m_ObjectHideFlags: 0
@@ -2342,6 +2420,34 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 141935577}
     - target: {fileID: 7477527470957793493, guid: 7fa08bc93877b0b4f91a851fd732877d, type: 3}
+      propertyPath: FadeObject
+      value: 
+      objectReference: {fileID: 141935575}
+    - target: {fileID: 7477527470957793493, guid: 7fa08bc93877b0b4f91a851fd732877d, type: 3}
+      propertyPath: _buttonMenu
+      value: 
+      objectReference: {fileID: 1994391639}
+    - target: {fileID: 7477527470957793493, guid: 7fa08bc93877b0b4f91a851fd732877d, type: 3}
+      propertyPath: ImageFadeObject
+      value: 
+      objectReference: {fileID: 141935577}
+    - target: {fileID: 7477527470957793493, guid: 7fa08bc93877b0b4f91a851fd732877d, type: 3}
+      propertyPath: _buttonNewSize.x
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477527470957793493, guid: 7fa08bc93877b0b4f91a851fd732877d, type: 3}
+      propertyPath: _buttonNewSize.y
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477527470957793493, guid: 7fa08bc93877b0b4f91a851fd732877d, type: 3}
+      propertyPath: _buttonOriginSize.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477527470957793493, guid: 7fa08bc93877b0b4f91a851fd732877d, type: 3}
+      propertyPath: _buttonOriginSize.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477527470957793493, guid: 7fa08bc93877b0b4f91a851fd732877d, type: 3}
       propertyPath: _buttonOriginalSize.x
       value: 1
       objectReference: {fileID: 0}
@@ -2359,6 +2465,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 603563130431115236, guid: 7fa08bc93877b0b4f91a851fd732877d, type: 3}
   m_PrefabInstance: {fileID: 1994391637}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1994391639 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1255616337157136972, guid: 7fa08bc93877b0b4f91a851fd732877d, type: 3}
+  m_PrefabInstance: {fileID: 1994391637}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2017608265
 GameObject:
   m_ObjectHideFlags: 0
@@ -2809,8 +2926,28 @@ PrefabInstance:
       value: -8.709
       objectReference: {fileID: 0}
     - target: {fileID: 1255616337157136972, guid: 7fa08bc93877b0b4f91a851fd732877d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1278413312392172774}
+    - target: {fileID: 1255616337157136972, guid: 7fa08bc93877b0b4f91a851fd732877d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OnClickPlayMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 2967394237420515675, guid: 7fa08bc93877b0b4f91a851fd732877d, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1278413312392172774}
+    - target: {fileID: 2967394237420515675, guid: 7fa08bc93877b0b4f91a851fd732877d, type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1278413312392172774}
+    - target: {fileID: 2967394237420515675, guid: 7fa08bc93877b0b4f91a851fd732877d, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnPointerEnterButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 2967394237420515675, guid: 7fa08bc93877b0b4f91a851fd732877d, type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnPointerExitButton
       objectReference: {fileID: 0}
     - target: {fileID: 5137201907223358979, guid: 7fa08bc93877b0b4f91a851fd732877d, type: 3}
       propertyPath: m_Name
@@ -2841,6 +2978,34 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 141935577}
     - target: {fileID: 7477527470957793493, guid: 7fa08bc93877b0b4f91a851fd732877d, type: 3}
+      propertyPath: FadeObject
+      value: 
+      objectReference: {fileID: 141935575}
+    - target: {fileID: 7477527470957793493, guid: 7fa08bc93877b0b4f91a851fd732877d, type: 3}
+      propertyPath: _buttonMenu
+      value: 
+      objectReference: {fileID: 1278413312392172775}
+    - target: {fileID: 7477527470957793493, guid: 7fa08bc93877b0b4f91a851fd732877d, type: 3}
+      propertyPath: ImageFadeObject
+      value: 
+      objectReference: {fileID: 141935577}
+    - target: {fileID: 7477527470957793493, guid: 7fa08bc93877b0b4f91a851fd732877d, type: 3}
+      propertyPath: _buttonNewSize.x
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477527470957793493, guid: 7fa08bc93877b0b4f91a851fd732877d, type: 3}
+      propertyPath: _buttonNewSize.y
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477527470957793493, guid: 7fa08bc93877b0b4f91a851fd732877d, type: 3}
+      propertyPath: _buttonOriginSize.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477527470957793493, guid: 7fa08bc93877b0b4f91a851fd732877d, type: 3}
+      propertyPath: _buttonOriginSize.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477527470957793493, guid: 7fa08bc93877b0b4f91a851fd732877d, type: 3}
       propertyPath: _buttonOriginalSize.x
       value: 1
       objectReference: {fileID: 0}
@@ -2853,3 +3018,25 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7fa08bc93877b0b4f91a851fd732877d, type: 3}
+--- !u!114 &1278413312392172774 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7477527470957793493, guid: 7fa08bc93877b0b4f91a851fd732877d, type: 3}
+  m_PrefabInstance: {fileID: 1278413312392172773}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5be4a40104b17aa4bacc4fd721ac5396, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1278413312392172775 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1255616337157136972, guid: 7fa08bc93877b0b4f91a851fd732877d, type: 3}
+  m_PrefabInstance: {fileID: 1278413312392172773}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

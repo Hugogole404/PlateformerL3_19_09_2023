@@ -6,107 +6,102 @@ using DG.Tweening;
 using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
 
-public class MainMenu : MonoBehaviour/*, IPointerEnterHandler*/
+public class MainMenu : MonoBehaviour
 {
-    [SerializeField] Button _button;
+    [SerializeField] Button _buttonMenu;
     [SerializeField] TMPro.TextMeshProUGUI Text;
-    [SerializeField] Image ImageFade;
-    [SerializeField] GameObject FadeObj;
-    [SerializeField] Vector3 _buttonOriginalSize;
-    [SerializeField] Vector3 _buttonResizedSize;
+    [SerializeField] Image ImageFadeObject;
+    [SerializeField] GameObject FadeObject;
+    [SerializeField] Vector3 _buttonOriginSize;
+    [SerializeField] Vector3 _buttonNewSize;
     [SerializeField] Color ColorInitial;
     [SerializeField] Color ColorSelected;
 
     #region Load Scene
-    private void LoadSceneGame()
+    private void LoadMainGame()
     {
         SceneManager.LoadScene("LEVEL_ART_1_DONTTOUCH");
     }
-    private void LoadSceneControls()
+    private void LoadControls()
     {
         SceneManager.LoadScene("Controls");
     }
-    private void LoadSceneGameStartScene()
+    private void LoadStartCinematic()
     {
         SceneManager.LoadScene("Start_Scene");
     }
-    private void LoadSceneOptions()
+    private void LoadOptions()
     {
         SceneManager.LoadScene("Options");
     }
-    private void LoadSceneCredits()
+    private void LoadCredits()
     {
         SceneManager.LoadScene("Credits");
     }
-    private void LoadSceneMenu()
+    private void LoadMenu()
     {
         SceneManager.LoadScene("MainMenu");
     }
-    private void QuitGame()
+    private void ExitGame()
     {
         Application.Quit();
     }
     #endregion
 
     #region Transform
-    private void Transform()
+    private void TransformScale()
     {
-        _button.transform.DOComplete();
-        _button.transform.DOPunchScale(new Vector3(0.5f, 0.5f, 0), 0.3f, 3, 0.3f);
-        _button.transform.DOComplete();
-        FadeObj.SetActive(true);
+        _buttonMenu.transform.DOComplete();
+        _buttonMenu.transform.DOPunchScale(new Vector3(0.5f, 0.5f, 0), 0.3f, 3, 0.3f);
+        _buttonMenu.transform.DOComplete();
+        FadeObject.SetActive(true);
     }
 
     public void OnClickPlayMenu()
     {
-        Transform();
-        ImageFade.DOFade(1, 0.8f).OnComplete(LoadSceneGameStartScene);
+        TransformScale();
+        ImageFadeObject.DOFade(1, 0.8f).OnComplete(LoadStartCinematic);
     }
     public void OnClickControls()
     {
-        Transform();
-        ImageFade.DOFade(1, 0.8f).OnComplete(LoadSceneControls);
+        TransformScale();
+        ImageFadeObject.DOFade(1, 0.8f).OnComplete(LoadControls);
     }
     public void OnClickPlay()
     {
-        Transform();
-        ImageFade.DOFade(1, 0.8f).OnComplete(LoadSceneGame);
+        TransformScale();
+        ImageFadeObject.DOFade(1, 0.8f).OnComplete(LoadMainGame);
     }
     public void OnClickOptions()
     {
-        Transform();
-        ImageFade.DOFade(1, 0.8f).OnComplete(LoadSceneOptions);
+        TransformScale();
+        ImageFadeObject.DOFade(1, 0.8f).OnComplete(LoadOptions);
     }
     public void OnClickPlayCredits()
     {
-        Transform();
-        ImageFade.DOFade(1, 0.8f).OnComplete(LoadSceneCredits);
+        TransformScale();
+        ImageFadeObject.DOFade(1, 0.8f).OnComplete(LoadCredits);
     }
     public void OnClickMenu()
     {
-        Transform();
-        ImageFade.DOFade(1, 0.8f).OnComplete(LoadSceneMenu);
+        TransformScale();
+        ImageFadeObject.DOFade(1, 0.8f).OnComplete(LoadMenu);
     }
     public void OnClickQuit()
     {
-        Transform();
-        ImageFade.DOFade(1, 0.8f).OnComplete(QuitGame);
+        TransformScale();
+        ImageFadeObject.DOFade(1, 0.8f).OnComplete(ExitGame);
     }
     #endregion
 
     public void OnPointerEnterButton()
     {
-        _button.transform.DOComplete();
-        _button.transform.DOScale(_buttonResizedSize, 0.2f);
+        _buttonMenu.transform.DOComplete();
+        _buttonMenu.transform.DOScale(_buttonNewSize, 0.2f);
     }
     public void OnPointerExitButton()
     {
-        _button.transform.DOComplete();
-        _button.transform.DOScale(_buttonOriginalSize, 0.2f);
+        _buttonMenu.transform.DOComplete();
+        _buttonMenu.transform.DOScale(_buttonOriginSize, 0.2f);
     }
-
-    //public void OnPointerEnter(PointerEventData eventData)
-    //{
-    //    _button.transform.DOScale(_buttonResizedSize, 0.2f);
-    //}
 }
