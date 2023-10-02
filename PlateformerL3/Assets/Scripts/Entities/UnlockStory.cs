@@ -19,7 +19,6 @@ public class UnlockStory : MonoBehaviour
     {
         if ((collision.GetComponent<PlayerController>() != null))
         {
-            CollectSound.Play();
             _isActive = true;
             Story.SetActive(_isActive);
             playerController._isPaused = true;
@@ -52,6 +51,7 @@ public class UnlockStory : MonoBehaviour
             _isActive = false;
             Story.SetActive(_isActive);
             playerController._isPaused = false;
+            CollectSound.Play();
             Destroy(obj);
             playerController._walkSpeed = playerController._walkSpeedMemory;
             CounterNotes.CountNotes += 1;
