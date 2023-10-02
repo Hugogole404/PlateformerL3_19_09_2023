@@ -12,7 +12,7 @@ public class NotesCount : MonoBehaviour
 
     public void UpdateScore()
     {
-        Text.text = $"Notes : {CountNotes} / {MaxNotes} ";
+        Text.text = $"Memories : {CountNotes} / {MaxNotes} ";
     }
     private void Update()
     {

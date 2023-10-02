@@ -22,6 +22,10 @@ public class MainMenu : MonoBehaviour/*, IPointerEnterHandler*/
     {
         SceneManager.LoadScene("LEVEL_ART_1_DONTTOUCH");
     }
+    private void LoadSceneControls()
+    {
+        SceneManager.LoadScene("Controls");
+    }
     private void LoadSceneGameStartScene()
     {
         SceneManager.LoadScene("Start_Scene");
@@ -57,6 +61,11 @@ public class MainMenu : MonoBehaviour/*, IPointerEnterHandler*/
     {
         Transform();
         ImageFade.DOFade(1, 0.8f).OnComplete(LoadSceneGameStartScene);
+    }
+    public void OnClickControls()
+    {
+        Transform();
+        ImageFade.DOFade(1, 0.8f).OnComplete(LoadSceneControls);
     }
     public void OnClickPlay()
     {
