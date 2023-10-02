@@ -429,6 +429,7 @@ MonoBehaviour:
   _isActive: 0
   obj: {fileID: 6582329235666267885}
   CollectSound: {fileID: 7485681217730039645, guid: ccc42344d7ee812408a16b20b31268bd, type: 3}
+  CounterNotes: {fileID: 0}
 --- !u!1 &6879144009342874889
 GameObject:
   m_ObjectHideFlags: 0
@@ -456,7 +457,7 @@ Transform:
   m_GameObject: {fileID: 6879144009342874889}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.45, y: 1.45, z: 1.45}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 6243279510363775485}
