@@ -31,11 +31,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float _timeMinBetweenJump;
     [SerializeField] float _jumpForce;
     [SerializeField] float _velocityFallMin;
-    [SerializeField] [Tooltip("Gravity when the player goes up and press jump")] private float _gravityUpJump;
+    [SerializeField][Tooltip("Gravity when the player goes up and press jump")] private float _gravityUpJump;
     [SerializeField] float _jumpInputTimer = 0.1f;
     [SerializeField] Collider2D[] _collidersGround;
     [SerializeField] float _timerNoJump;
-    [SerializeField] [Tooltip("Gravity otherwise")] private float _gravity;
+    [SerializeField][Tooltip("Gravity otherwise")] private float _gravity;
     [SerializeField] float _timeSinceJumpPressed;
     [SerializeField] float _timeSinceGrounded;
     [SerializeField] float _coyoteTime;
@@ -66,6 +66,9 @@ public class PlayerController : MonoBehaviour
     [Header("Animations")]
     public Animator Anim;
     public SpriteRenderer Sprite;
+    public GameObject FxWalk;
+    public ParticleSystem Fx;
+    public bool moduleEnabled;
 
     //[Header("Corner")]
     //[SerializeField] float[] direction;
@@ -75,18 +78,31 @@ public class PlayerController : MonoBehaviour
     //[SerializeField] private Vector2 _collisionBox;
     void AnimationUpdate()
     {
+        var emission = Fx.emission;
         if (_inputs.x > 0f)
         {
+            //FxWalk.SetActive(true);
+            //new WaitForSeconds(1f);
+            //object value = Fx.enableEmission(true);
             Anim.SetBool("Walk", true);
             Sprite.flipX = false;
+            Fx.enableEmission = true;
+            //emission.enabled = moduleEnabled;
+            //Fx.enableEmission = true;
         }
         else if (_inputs.x < 0f)
         {
+            //new WaitForSeconds(1f);
+            //FxWalk.SetActive(true);
+            Fx.enableEmission = true;
             Anim.SetBool("Walk", true);
             Sprite.flipX = true;
         }
         else
         {
+            //Fx.enableEmission = false;
+            Fx.enableEmission = false;
+            //FxWalk.SetActive(false);
             Anim.SetBool("Walk", false);
         }
     }
