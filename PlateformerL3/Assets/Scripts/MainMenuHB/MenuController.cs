@@ -172,7 +172,7 @@ namespace MenuControllerSystem
                 AudioListener.volume = defaultMusic;
                 soundSlider.value = defaultMusic;
                 soundTextValue.text = defaultMusic.ToString("0.0");
-                SoundApply();
+                MusicApply();
 
             }
 
