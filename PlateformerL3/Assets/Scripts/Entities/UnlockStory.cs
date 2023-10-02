@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class UnlockStory : MonoBehaviour
 {
-    //public CapsuleCollider2D PlayerDetection;
     public PlayerController playerController;
     public GameObject Story;
     public bool _isActive = false;
@@ -26,24 +25,6 @@ public class UnlockStory : MonoBehaviour
             playerController._walkSpeed = 0;
         }
     }
-
-    //private void Update()
-    //{
-    //    if (Input.GetKeyDown(KeyCode.Space) && _isInObject)
-    //    {
-    //        Story.SetActive(!_isActive);
-    //        _isInObject = false;
-    //    }
-    //}
-    //private void OnTriggerStay2D(Collider2D collision)
-    //{
-    //    if ((collision == PlayerDetection))
-    //    {
-    //        _isActive = true;
-    //        Story.SetActive(_isActive);
-    //        playerController._isPaused = true;
-    //    }
-    //}
 
     void AvoidStory()
     {
