@@ -70,6 +70,11 @@ public class PlayerController : MonoBehaviour
     public ParticleSystem Fx;
     public bool moduleEnabled;
 
+    [Header("Mecanics")]
+    public bool CanJump = false;
+    public bool CanDoubleJump = false;
+    public bool CanFly = false;
+
     //[Header("Corner")]
     //[SerializeField] float[] direction;
     //[SerializeField] private BoxCollider2D _offsetCollisionBox;
@@ -112,12 +117,12 @@ public class PlayerController : MonoBehaviour
         _inputs.y = Input.GetAxisRaw("Vertical");
         _inputJump = Input.GetKey(KeyCode.UpArrow);
 
-        if (Input.GetKeyDown(KeyCode.UpArrow))
+        if (Input.GetKeyDown(KeyCode.UpArrow) && CanJump == true)
         {
             _timeSinceJumpPressed = 0;
             _currentJumpTank--;
         }
-        if (Input.GetKey(KeyCode.LeftControl))
+        if (Input.GetKey(KeyCode.LeftControl) && CanFly)
         {
             for (int i = 0; i < _windArea.Count; i++)
             {
@@ -188,7 +193,7 @@ public class PlayerController : MonoBehaviour
 
         if (_isGrounded == false)
         {
-            if (_rb.velocity.y <= 0 || _isOnSlope)
+            if ((_rb.velocity.y <= 0 || _isOnSlope) && CanJump == true)
             {
                 _rb.gravityScale = _gravity;
             }
@@ -202,14 +207,14 @@ public class PlayerController : MonoBehaviour
             _rb.gravityScale = _gravity;
         }
 
-        if ((_inputJump && _rb.velocity.y <= 0 && (_isGrounded || _timeSinceGrounded < _coyoteTime) && _timerNoJump <= 0 && _timeSinceJumpPressed < _jumpInputTimer))
+        if ((_inputJump && _rb.velocity.y <= 0 && (_isGrounded || _timeSinceGrounded < _coyoteTime) && _timerNoJump <= 0 && _timeSinceJumpPressed < _jumpInputTimer) && CanJump == true)
         {
             _jumpSoundOther.Play(0);
             Anim.SetBool("Jump", true);
             _rb.velocity = new Vector2(_rb.velocity.x, _jumpForce);
             _timerNoJump = _timeMinBetweenJump;
         }
-        else if ((_inputJump && _timeSinceJumpPressed < _jumpInputTimer) && !_isGrounded && _currentJumpTank > 0)
+        else if ((_inputJump && _timeSinceJumpPressed < _jumpInputTimer) && !_isGrounded && _currentJumpTank > 0 && CanDoubleJump)
         {
             if (_currentJumpTank == 1)
             {

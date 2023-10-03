@@ -13,6 +13,8 @@ public class UnlockStory : MonoBehaviour
     public GameObject obj;
     [SerializeField] AudioSource CollectSound;
     public NotesCount CounterNotes;
+    public int ID;
+    public bool CanUnlockMecanics;
 
     private void OnTriggerStay2D(Collider2D collision)
     {
@@ -23,6 +25,37 @@ public class UnlockStory : MonoBehaviour
             Story.SetActive(_isActive);
             playerController._isPaused = true;
             playerController._walkSpeed = 0;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        CheckID();
+    }
+
+    void CheckID()
+    {
+        if (CanUnlockMecanics)
+        {
+            if (ID == 1)
+            {
+                playerController.CanJump = true;
+                Debug.Log("Jump");
+            }
+            else if (ID == 2)
+            {
+                playerController.CanDoubleJump = true;
+                Debug.Log("Double");
+            }
+            else if (ID == 3)
+            {
+                playerController.CanFly = true;
+                Debug.Log("Fly");
+            }
+            else
+            {
+                return;
+            }
         }
     }
 
