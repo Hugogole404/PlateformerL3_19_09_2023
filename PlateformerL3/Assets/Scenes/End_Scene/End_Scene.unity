@@ -5793,12 +5793,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5be4a40104b17aa4bacc4fd721ac5396, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _button: {fileID: 1614411703}
+  _buttonMenu: {fileID: 1614411703}
   Text: {fileID: 0}
-  ImageFade: {fileID: 2051683198}
-  FadeObj: {fileID: 2051683196}
-  _buttonOriginalSize: {x: 0, y: 0, z: 0}
-  _buttonResizedSize: {x: 0, y: 0, z: 0}
+  ImageFadeObject: {fileID: 2051683198}
+  FadeObject: {fileID: 2051683196}
+  _buttonOriginSize: {x: 1, y: 1, z: 0}
+  _buttonNewSize: {x: 1.3, y: 1.3, z: 0}
   ColorInitial: {r: 0, g: 0, b: 0, a: 0}
   ColorSelected: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1770961075
