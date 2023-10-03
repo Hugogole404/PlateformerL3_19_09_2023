@@ -40,17 +40,14 @@ public class UnlockStory : MonoBehaviour
             if (ID == 1)
             {
                 playerController.CanJump = true;
-                Debug.Log("Jump");
             }
             else if (ID == 2)
             {
                 playerController.CanDoubleJump = true;
-                Debug.Log("Double");
             }
             else if (ID == 3)
             {
                 playerController.CanFly = true;
-                Debug.Log("Fly");
             }
             else
             {
